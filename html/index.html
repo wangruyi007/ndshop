@@ -1,2 +1,255 @@
-qwew
-<div>
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>商城首页</title>
+	<meta name="description" content="">
+	<meta name="keywords" content="">
+	<link rel="stylesheet" href="stylesheets/screen.css" />
+	<link rel="stylesheet" href="stylesheets/index.css" />		
+</head>
+<body>
+	<header>
+		<div class="header_top">
+			<div class="wrap">
+				<div class="yc_btn">
+					<span class="yc_line">运送至：<a>广州</a></span>
+				</div>
+				<ul class="header_topright">
+					<li>你好，请登录<a href="#" class="red">免费登录</a></li>
+					<li class="locor">|</li>
+					<li>
+						<span class="yc_line on_red">我的订单<a class="more_icon">&or;</a></span>						
+					</li>
+					<li class="locor">|</li>
+					<li class="yc_btn">
+						<span class="yc_line on_red">我的商城<a class="more_icon">&or;</a></span>						
+					</li>
+					<li class="locor">|</li>
+					<li class="yc_btn" id="phone_scli">
+						<span class="yc_line on_red">
+							<i id="phone_sc_icon"></i>手机商城<a class="more_icon">&or;</a>
+						</span>
+						<div id="phone_sc" class="yc_con">
+						</div>
+					</li>
+					<li class="locor">|</li>
+					<li class="yc_btn"><span class="yc_line on_red">客户服务<a class="more_icon">&or;</a></span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="header_ls">
+			<div class="wrap">
+				<div class="header_lg">
+					<a href="javascript;" class="logo">商城</a>
+				</div>
+				<div class="search_wrap">
+					<input type="text" class="search_strip" value="" />
+					<button onclick="search('key');return false;" class="button">
+						<i></i>搜索
+					</button>
+				</div>
+				<div id="shopping_cart" class="yc_btn">
+					<span class="yc_line">
+					  <i class="shopping_cart_icon"></i>
+					  <a class="my_cart">我的购物车<!--<div id="shopping_cart_number"></div>--></a>
+					  <a>&gt;</a>
+                  </span>
+					<!--<div class="yc_con" id="cart_content">-->
+						<!--<i id="cart_incon"></i>-->
+						<!--<a>购物车中还没有商品，赶紧选购吧！</a>-->
+					<!--</div>-->
+				</div>
+				<div class="search_hot">
+					<span>热门搜索： </span>
+					<a class="red">情侣套装</a>
+					<a>轻薄羽绒</a>
+					<a>连衣裙</a>
+					<a>拖鞋</a>
+					<a>旅行套装</a>
+					<a>爱奇艺会员</a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!--导航条-->
+	<nav class="nav-box">
+		<div class="wrap">
+			<ul>
+				<li><a href="#" class="all_goods">全部商品分类</a></li>
+				<li class="nav_blue"><a href="#">首页</a></li>
+				<li class="nav_blue"><a href="#">热销推荐</a></li>
+				<li class="nav_blue"><a href="#">限时抢购</a></li>
+				<li class="nav_blue"><a href="#">精品数码</a></li>
+				<li class="nav_blue"><a href="#">品牌目录</a></li>
+			</ul>
+		</div>
+	</nav>
+	<!--左侧菜单栏-->
+	<div class="main_box">
+		<div class="wrap">
+			<div class="main_menu">
+				<ul>
+					<li>
+						<h2>
+							<i></i>
+							家用电器
+						</h2>
+						<div class="samll_menu">
+							<a href="#">微波炉</a>
+							<a href="#">冰箱</a>
+							<a href="#">洗碗机</a>
+							<a href="#">消毒机</a>
+							<a href="#">烤箱</a>
+							<a href="#">洗衣机</a>
+							<a href="#">干衣机</a>
+							<a href="#">制冰机</a>
+						</div>
+						<i>&gt;</i>
+					</li>
+					<li>
+						<h2>
+							<i></i>
+							礼品箱包
+						</h2>
+						<div class="samll_menu">
+							<a href="#">微波炉</a>
+							<a href="#">冰箱</a>
+							<a href="#">洗碗机</a>
+							<a href="#">消毒机</a>
+							<a href="#">烤箱</a>
+							<a href="#">洗衣机</a>
+							<a href="#">干衣机</a>
+							<a href="#">制冰机</a>
+						</div>
+						<i>&gt;</i>
+					</li>
+					<li>
+						<h2>
+							<i></i>
+							个护美妆
+						</h2>
+						<div class="samll_menu">
+							<a href="#">微波炉</a>
+							<a href="#">冰箱</a>
+							<a href="#">洗碗机</a>
+							<a href="#">消毒机</a>
+							<a href="#">烤箱</a>
+							<a href="#">洗衣机</a>
+							<a href="#">干衣机</a>
+							<a href="#">制冰机</a>
+						</div>
+						<i>&gt;</i>
+					</li>
+					<li>
+						<h2>
+							<i></i>
+							手机通讯
+						</h2>
+						<div class="samll_menu">
+							<a href="#">微波炉</a>
+							<a href="#">冰箱</a>
+							<a href="#">洗碗机</a>
+							<a href="#">消毒机</a>
+							<a href="#">烤箱</a>
+							<a href="#">洗衣机</a>
+							<a href="#">干衣机</a>
+							<a href="#">制冰机</a>
+						</div>
+						<i>&gt;</i>
+					</li>
+					<li>
+						<h2>
+							<i></i>
+							电脑数码
+						</h2>
+						<div class="samll_menu">
+							<a href="#">微波炉</a>
+							<a href="#">冰箱</a>
+							<a href="#">洗碗机</a>
+							<a href="#">消毒机</a>
+							<a href="#">烤箱</a>
+							<a href="#">洗衣机</a>
+							<a href="#">干衣机</a>
+							<a href="#">制冰机</a>
+						</div>
+						<i>&gt;</i>
+					</li>
+					<li>
+						<h2>
+							<i></i>
+							运动健身
+						</h2>
+						<div class="samll_menu">
+							<a href="#">微波炉</a>
+							<a href="#">冰箱</a>
+							<a href="#">洗碗机</a>
+							<a href="#">消毒机</a>
+							<a href="#">烤箱</a>
+							<a href="#">洗衣机</a>
+							<a href="#">干衣机</a>
+							<a href="#">制冰机</a>
+						</div>
+						<i>&gt;</i>
+					</li>
+				</ul>
+			</div>
+			<!--banner-->
+			<div class="main_banner">
+				<ul class="banner_pic">
+					<li><img src="images/head/banner01.jpg" alt=""></li>
+					<!--<li><img src="images/head/banner01.jpg" alt=""></li>-->
+					<!--<li><img src="images/head/banner03.jpg" alt=""></li>-->
+				</ul>
+				<ul class="banner_yuan">
+					<li class="curent"></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="main_right">
+				<ul>
+					<li>
+						<div class="word">
+							<p class="big_w">电视伴侣</p>
+							<p class="samll_w">进口坚果</p>
+						</div>
+						<div class="hotpic">
+							<img src="images/head/hotpic.png" alt="">
+						</div>
+						<div class="auto">
+							<img src="images/head/img01.png" alt="">
+						</div>
+
+					</li>
+					<li>
+						<div class="word">
+							<p class="big_w">植物精华系列</p>
+							<p class="samll_w">欧莱雅洗护合一</p>
+							<p class="samllx_w">7折起</p>
+						</div>
+						<div class="auto">
+							<img src="images/head/img02.png" alt="">
+						</div>
+
+					</li>
+					<li>
+						<div class="word">
+							<p class="big_w">现代电子产品</p>
+							<p class="samll_w">全场低至5折</p>
+						</div>
+						<div class="auto">
+							<img src="images/head/img03.jpg" alt="">
+						</div>
+
+					</li>
+				</ul>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+</html>
