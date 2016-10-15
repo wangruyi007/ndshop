@@ -18,18 +18,17 @@
  * BUSINESS
  *
  * BASE
- * screen.scss....................针对当前站点主页的样式修饰
+ *
  */
 
 @import "variables", "mixin","compass/reset";
 
 @import "compass/css3";
-@import "compass/css3";
 @import "compass/support";
 @import "compass/typography/links";
 @import "compass/typography/lists";
 @import "compass/typography/text";
-//@import "compass/typography/vertical_rhythm";
+////@import "compass/typography/vertical_rhythm";
 @import "compass/utilities/color";
 @import "compass/utilities/print";
 @import "compass/utilities/tables";
@@ -41,6 +40,8 @@ $browser-minimum-versions: ("ie": "6");
 
 //@include print-utilities(screen);
 @include reset-html5;
+
+
 /*header-top start*/
 .header_top{
     width: 100%;
@@ -102,7 +103,8 @@ $browser-minimum-versions: ("ie": "6");
     width: 100%;
     height:80px;
     margin: {
-        top: $header-lg-margin;
+        top:17px;
+        bottom:30px;
     }
     .header_lg {
         position: relative;
@@ -440,55 +442,3 @@ $browser-minimum-versions: ("ie": "6");
     }
 }
 /*右侧图片结束*/
-
-/*热销部分开始*/
-    #main_module{
-        width: 100%;
-        height: auto;
-        clear: both;
-        .hot_title{
-            margin-top: 20px;
-            background-color: #fcf;
-            .recommend{
-                line-height: 42px;
-                color: #333;
-                font:{
-                    size: 20px;
-                    weight: bold;
-                }
-            }
-            .hot_pic{
-                @include pie-clearfix;
-                .hot_list{
-                    width: 220px;
-                    height: 200px;
-                    background-color: #f00;
-                    text-align: center;
-                    .hot_img{
-                        //width: 105px;
-                        //height: 113px;
-                        text-align: center;
-                    }
-                    .intelligent{
-                        //line-height: 36px;
-                        color: #333;
-                        font:{
-                            size: 18px;
-                            weight: bold;
-                        }
-                        .hot_red{
-                            width: 20px;
-                            height: 12px;
-                            background: #ff0722;
-                            display: inline-block;
-                            line-height: 12;
-                            text-align: center;
-
-                        }
-                    }
-                }
-
-            }
-        }
-    }
-/*热销部分结束*/
