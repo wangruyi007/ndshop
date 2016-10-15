@@ -86,12 +86,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 80, head/*.png */
-.head-sprite {
-  background-image: url('/images/head-s253c2efedd.png');
-  background-repeat: no-repeat;
-}
-
 /* line 15, ../../../../../../../Ruby22-x64/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/_print.scss */
 .print-only {
   display: none;
@@ -166,15 +160,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   transition: all 0.2s;
 }
 
-/*logo*/
 /* line 101, ../sass/screen.scss */
 #header_ls {
   width: 100%;
   height: 80px;
   margin-top: 17px;
-  /*搜索框*/
-  /*购物车*/
-  /*热门搜索*/
 }
 /* line 107, ../sass/screen.scss */
 #header_ls .header_lg {
@@ -214,14 +204,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   float: left;
   border-color: #e2e2e2;
   border-style: solid;
-  border-top-width: 2px;
-  border-bottom-width: 2px;
-  border-left-width: 2px;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-left-width: 1px;
+  border-right: 0 none;
   outline: 0;
   font-family: Braggadocio, Arial, Verdana, Helvetica, sans-serif, Microsoft YaHei;
-  font-size: 14px;
+  font-size: 16px;
 }
-/* line 156, ../sass/screen.scss */
+/* line 157, ../sass/screen.scss */
 #header_ls .search_wrap .button {
   float: left;
   width: 87px;
@@ -234,7 +225,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 16px;
   cursor: pointer;
 }
-/* line 169, ../sass/screen.scss */
+/* line 170, ../sass/screen.scss */
 #header_ls .search_wrap .button i {
   top: 0;
   left: 0;
@@ -244,47 +235,56 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   position: absolute;
   overflow: hidden;
 }
-/* line 181, ../sass/screen.scss */
+/* line 182, ../sass/screen.scss */
 #header_ls #shopping_cart {
   float: right;
-  width: 114px;
+  width: 115px;
+  width: 115px;
   height: 40px;
   background-color: #fd5d5f;
   margin-right: 135px;
 }
-/* line 187, ../sass/screen.scss */
+/* line 189, ../sass/screen.scss */
 #header_ls #shopping_cart .yc_line {
   line-height: 40px;
 }
-/* line 189, ../sass/screen.scss */
+/* line 191, ../sass/screen.scss */
+#header_ls #shopping_cart .yc_line .shopping_cart_icon {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: #fff;
+  vertical-align: middle;
+}
+/* line 200, ../sass/screen.scss */
 #header_ls #shopping_cart .yc_line a, #header_ls #shopping_cart .yc_line .search_hot span, #header_ls .search_hot #shopping_cart .yc_line span {
   color: #fff;
   text-align: center;
 }
-/* line 198, ../sass/screen.scss */
+/* line 209, ../sass/screen.scss */
 #header_ls .search_hot {
   width: 514px;
   height: 20px;
   line-height: 20px;
   overflow: hidden;
 }
-/* line 206, ../sass/screen.scss */
+/* line 217, ../sass/screen.scss */
 #header_ls .search_hot a, #header_ls .search_hot span {
-  color: #888;
+  color: #999;
   font-size: 14px;
 }
-/* line 211, ../sass/screen.scss */
+/* line 222, ../sass/screen.scss */
 #header_ls .search_hot a:hover, #header_ls .search_hot span:hover {
   cursor: pointer;
 }
-/* line 215, ../sass/screen.scss */
+/* line 226, ../sass/screen.scss */
 .red, #header_ls .search_hot a:hover, #header_ls .search_hot span:hover {
   color: red !important;
 }
 
 /*header-top end*/
 /*nav start*/
-/* line 225, ../sass/screen.scss */
+/* line 236, ../sass/screen.scss */
 .nav-box {
   width: 100%;
   height: 40px;
@@ -294,12 +294,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-style: solid;
   border-color: #60a2df;
 }
-/* line 235, ../sass/screen.scss */
+/* line 246, ../sass/screen.scss */
 .nav-box ul {
   display: block;
   float: left;
 }
-/* line 238, ../sass/screen.scss */
+/* line 249, ../sass/screen.scss */
 .nav-box ul li {
   float: left;
   height: 40px;
@@ -310,11 +310,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   cursor: pointer;
   overflow: hidden;
 }
-/* line 249, ../sass/screen.scss */
+/* line 260, ../sass/screen.scss */
 .nav-box ul li.nav_blue {
   padding: 0 0 0 80px;
 }
-/* line 252, ../sass/screen.scss */
+/* line 263, ../sass/screen.scss */
 .nav-box ul li .all_goods {
   width: 228px;
   height: 40px;
@@ -322,9 +322,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   background-color: #0071b3;
   color: #fff;
   font-size: 17px;
-  font-family: Arial, Verdana, Helvetica, sans-serif, Microsoft YaHei;
+  font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif;
 }
-/* line 263, ../sass/screen.scss */
+/* line 274, ../sass/screen.scss */
 a, #header_ls .search_hot span {
   color: #222;
   text-decoration: none;
@@ -333,32 +333,33 @@ a, #header_ls .search_hot span {
 a:hover, #header_ls .search_hot span:hover, a:focus, #header_ls .search_hot span:focus {
   text-decoration: underline;
 }
-/* line 266, ../sass/screen.scss */
+/* line 277, ../sass/screen.scss */
 a:hover, #header_ls .search_hot span:hover {
   text-decoration: none;
   color: #35b5ff;
 }
 
 /*nav end*/
-/* line 277, ../sass/screen.scss */
+/* line 288, ../sass/screen.scss */
 .main_box {
   width: 100%;
   height: auto;
   clear: both;
 }
-/* line 282, ../sass/screen.scss */
+/* line 293, ../sass/screen.scss */
 .main_box .main_menu {
   width: 228px;
   height: auto;
   background-color: #33b5ff;
   float: left;
+  font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif;
 }
-/* line 287, ../sass/screen.scss */
+/* line 299, ../sass/screen.scss */
 .main_box .main_menu ul {
   width: 200px;
   margin: 0 auto;
 }
-/* line 290, ../sass/screen.scss */
+/* line 302, ../sass/screen.scss */
 .main_box .main_menu ul li {
   position: relative;
   border-bottom: 1px;
@@ -366,28 +367,34 @@ a:hover, #header_ls .search_hot span:hover {
   border-color: #fff;
   padding-top: 10px;
 }
-/* line 300, ../sass/screen.scss */
+/* line 312, ../sass/screen.scss */
 .main_box .main_menu ul li:last-child {
   border-bottom: 0 none;
 }
-/* line 303, ../sass/screen.scss */
+/* line 315, ../sass/screen.scss */
 .main_box .main_menu ul li h2 {
   color: #fff;
   font-size: 16px;
-  font-weight: bold;
 }
-/* line 310, ../sass/screen.scss */
+/* line 321, ../sass/screen.scss */
+.main_box .main_menu ul li h2 .nav_icon {
+  height: 15px;
+  width: 15px;
+  display: inline-block;
+  background-color: #fff;
+}
+/* line 328, ../sass/screen.scss */
 .main_box .main_menu ul li .samll_menu {
   line-height: 16px;
-  padding: 8px 28px 9px 16px;
+  padding: 9px 28px 9px 16px;
 }
-/* line 313, ../sass/screen.scss */
+/* line 331, ../sass/screen.scss */
 .main_box .main_menu ul li .samll_menu a, .main_box .main_menu ul li .samll_menu #header_ls .search_hot span, #header_ls .search_hot .main_box .main_menu ul li .samll_menu span {
   color: #fff;
   font-size: 12px;
 }
-/* line 318, ../sass/screen.scss */
-.main_box .main_menu ul li i {
+/* line 336, ../sass/screen.scss */
+.main_box .main_menu ul li .jiantou {
   position: absolute;
   z-index: 1;
   top: 43px;
@@ -399,21 +406,43 @@ a:hover, #header_ls .search_hot span:hover {
   cursor: pointer;
 }
 
-/* line 336, ../sass/screen.scss */
+/* line 354, ../sass/screen.scss */
 .main_banner {
   width: 670px;
-  height: 480px;
+  height: 479px;
   float: left;
   position: relative;
 }
-/* line 341, ../sass/screen.scss */
+/* line 359, ../sass/screen.scss */
+.main_banner .banner_pic {
+  position: relative;
+}
+/* line 361, ../sass/screen.scss */
+.main_banner .banner_pic li {
+  position: absolute;
+  height: 480px;
+}
+/* line 364, ../sass/screen.scss */
+.main_banner .banner_pic li:first-child {
+  z-index: 11;
+}
+/* line 367, ../sass/screen.scss */
+.main_banner .banner_pic li:nth-child(2) {
+  z-index: 10;
+}
+/* line 370, ../sass/screen.scss */
+.main_banner .banner_pic li:nth-child(3) {
+  z-index: 1;
+}
+/* line 375, ../sass/screen.scss */
 .main_banner .banner_yuan {
   position: absolute;
   left: 50%;
   bottom: 20px;
   margin-left: -56px;
+  z-index: 200;
 }
-/* line 346, ../sass/screen.scss */
+/* line 381, ../sass/screen.scss */
 .main_banner .banner_yuan li {
   width: 8px;
   height: 8px;
@@ -424,50 +453,50 @@ a:hover, #header_ls .search_hot span:hover {
   cursor: pointer;
   margin: 0 8px;
 }
-/* line 355, ../sass/screen.scss */
+/* line 390, ../sass/screen.scss */
 .main_banner .banner_yuan li.curent {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*右侧图片开始*/
-/* line 365, ../sass/screen.scss */
+/* line 400, ../sass/screen.scss */
 .main_right {
   float: right;
   width: 202px;
   height: auto;
 }
-/* line 369, ../sass/screen.scss */
+/* line 404, ../sass/screen.scss */
 .main_right li {
   clear: both;
 }
-/* line 371, ../sass/screen.scss */
+/* line 406, ../sass/screen.scss */
 .main_right li .word {
   float: left;
   padding-top: 7px;
   padding-left: 6px;
   line-height: 20px;
 }
-/* line 378, ../sass/screen.scss */
+/* line 413, ../sass/screen.scss */
 .main_right li .word .big_w {
   color: #333;
   font-size: 16px;
   font-weight: bold;
 }
-/* line 385, ../sass/screen.scss */
+/* line 420, ../sass/screen.scss */
 .main_right li .word .samll_w, .main_right li .word .samllx_w {
   color: #f00;
   font-size: 15px;
 }
-/* line 389, ../sass/screen.scss */
+/* line 424, ../sass/screen.scss */
 .main_right li .word .samllx_w {
   font-size: 12px;
 }
-/* line 394, ../sass/screen.scss */
+/* line 429, ../sass/screen.scss */
 .main_right li .hotpic {
   float: right;
   margin-right: 8px;
 }
-/* line 399, ../sass/screen.scss */
+/* line 434, ../sass/screen.scss */
 .main_right li .auto img {
   width: 148px;
   height: 110px;
