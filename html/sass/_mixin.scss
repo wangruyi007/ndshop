@@ -22,3 +22,11 @@
   　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
   　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
 }
+@mixin pie-clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @include has-layout;
+}
