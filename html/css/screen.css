@@ -379,18 +379,16 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         display: inline-block; }
   .service .service_center {
     display: inline-block;
-    clear: both;
-    font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
+    clear: both; }
     .service .service_center dl {
       float: left;
-      width: 220px;
+      width: 210px;
       text-align: left; }
       .service .service_center dl dt {
         line-height: 36px;
         color: #333;
         font-size: 18px;
-        font-weight: bold;
-        font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
+        font-weight: bold; }
       .service .service_center dl dd {
         line-height: 26px;
         color: #333;

@@ -494,3 +494,97 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     }
 }
 /*右侧图片结束*/
+
+//service start
+    .service{
+        width: 100%;
+        height: auto;
+        background-color: #fbfbfb;
+        margin-top: 100px;
+        // text-align: center;
+        .service_top{
+            height:100px;
+            line-height: 100px;
+            .service_pic{
+                display:inline-block;
+                img{
+                    width: 212px;
+                    height:53px;
+                    display:inline-block;
+                }
+                line-height: 100px;
+                text-align: center;
+                padding-top: 10px;
+                padding-right: 50px;
+                }
+        
+        }
+
+        .service_center{
+            display:inline-block;
+            clear:both;
+            font-family:$main-sec-ff;
+            dl{
+                float: left;
+                width: 220px;
+                text-align: left;
+                
+            
+                dt{
+                    line-height: 36px;
+                    color:#333;
+                    font: {
+                        size:18px;
+                        weight:bold;
+                        family:$main-sec-ff;
+                    }
+                }
+                dd{
+                    line-height: 26px;
+                    color:#333;
+                    font:{
+                        size:14px;
+                        family:$main-sec-ff;
+                    }
+                }
+                
+            }
+        }
+    }
+//service end
+
+
+//footer start
+
+    .footer{
+        width: 100%;
+        height: auto;
+        text-align: center;
+
+        .foot_link{
+            padding-top: 15px;
+            border:{
+                top:1px;
+                style:solid;
+                color:#ccc;
+            }
+           
+            color:#666666;
+            font:{
+                size:14px;
+                family:$main-sec-ff;
+                
+            }
+            a{
+                padding-right: 5px;
+            }
+        
+        }
+        .autocation{
+            margin-top: 25px;
+            a{
+                margin: 0 10px;
+            }
+        }
+    }
+//footer end
