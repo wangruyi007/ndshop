@@ -21,27 +21,68 @@
  *
  */
 
-@import "variables", "mixin","compass/reset";
-
-@import "compass/css3";
-@import "compass/support";
-@import "compass/typography/links";
-@import "compass/typography/lists";
-@import "compass/typography/text";
-////@import "compass/typography/vertical_rhythm";
-@import "compass/utilities/color";
-@import "compass/utilities/print";
-@import "compass/utilities/tables";
-@import "compass/utilities/general";
-//@import "head/*.png";
-//@import "icons";
+@import "variables", "mixin";
 
 $browser-minimum-versions: ("ie": "6");
 
-//@include print-utilities(screen);
-@include reset-html5;
 
+//浏览器重置样式
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, span, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+html {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+a img, #header_ls .search_hot span img {
+    border: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
 
+/*清除浮动样式*/
+.clearfix{
+    &:before,&:after {
+         content:"";
+         display: table;
+     }
+    &:after {
+        clear:both;
+        overflow: hidden;
+    }
+}
 /*header-top start*/
 .header_top{
     width: 100%;
@@ -92,7 +133,7 @@ $browser-minimum-versions: ("ie": "6");
                     left:5px;
                     top:8px;
                 }
-                @include transition(all .2s);
+                //@include transition(all .2s);
             }
         }
     }
@@ -117,10 +158,10 @@ $browser-minimum-versions: ("ie": "6");
             display: block;
             width: 185px;
             height: 44px;
-            background-image: url('images/head/logo.png');
-            background-repeat:no-repeat;
-            text-indent: -2000px;
-            padding-left: 30px;;
+            //background-image: url('images/head/logo.png');
+            //background-repeat:no-repeat;
+            //text-indent: -2000px;
+            padding-left: 45px;
         }
     }
 
@@ -412,6 +453,9 @@ $browser-minimum-versions: ("ie": "6");
                 left: 6px;
             }
             line-height: 20px;
+            font:{
+                family: $main-sec-ff;
+            }
             .big_w{
                 color: #333;
                 font:{
