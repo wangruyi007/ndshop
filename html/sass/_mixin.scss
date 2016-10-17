@@ -18,9 +18,9 @@
   color:#fff;
 }
 @mixin rounded($vert, $horz, $radius: 10px) {
-  　　　　border-#{$vert}-#{$horz}-radius: $radius;
-  　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
-  　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
+　　　　border-#{$vert}-#{$horz}-radius: $radius;
+　　　　-moz-border-radius-#{$vert}#{$horz}: $radius;
+　　　　-webkit-border-#{$vert}-#{$horz}-radius: $radius;
 }
 @mixin pie-clearfix {
   &:after {
