@@ -94,9 +94,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         width: $wrap-width;
         margin: 0 auto;
     }
-    .yc_btn{
+    .yc_adr{
         float: left;
-        
+
     }
     .header_topright{
         float: right;
@@ -109,10 +109,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             padding-right: 12px;
             @extend .header_topright;
             cursor:pointer;
-            position:relative;      
+            position:relative;
+            &.yc_btn{
+                // // height: 14px;
+                // // border-left: 1px solid #ddd;
+                // // line-height: 30px;
+                // .yc_line{
+                //     padding-left: 2px;
+                // }
+            }      
             @at-root .locor{
                 color: #ddd;
-            }
+             }
             .red{
                 color: red;
                 text-decoration: underline;

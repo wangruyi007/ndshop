@@ -85,7 +85,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .wrap {
     width: 1100px;
     margin: 0 auto; }
-  .header_top .yc_btn {
+  .header_top .yc_adr {
     float: left; }
   .header_top .header_topright, .header_top .header_topright li {
     float: right;
