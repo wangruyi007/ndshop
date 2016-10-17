@@ -379,16 +379,18 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         display: inline-block; }
   .service .service_center {
     display: inline-block;
-    clear: both; }
+    clear: both;
+    font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
     .service .service_center dl {
       float: left;
-      width: 210px;
+      width: 220px;
       text-align: left; }
       .service .service_center dl dt {
         line-height: 36px;
         color: #333;
         font-size: 18px;
-        font-weight: bold; }
+        font-weight: bold;
+        font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
       .service .service_center dl dd {
         line-height: 26px;
         color: #333;
@@ -412,4 +414,4 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   .footer .autocation {
     margin-top: 25px; }
     .footer .autocation a, .footer .autocation .header_ls .search_hot span, .header_ls .search_hot .footer .autocation span {
-      margin: 0 10px; }
+      margin: 0 14px; }
