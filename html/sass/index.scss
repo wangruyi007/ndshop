@@ -1,0 +1,72 @@
+
+@mixin clear{
+  clear: both;
+}
+
+/*热销推荐部分开始*/
+#main_module{
+  width: 100%;
+  height:auto;
+  .hot_title{
+    margin-top:20px;
+    .recommend{
+      line-height: 40px;
+      color: #333;
+      font:{
+        size: 20px;
+        weight: bold;
+      }
+    }
+    .hot_pic{
+     display: inline-block;
+      padding: {
+        top:20px;
+      }
+      .hot_list{
+        width: 220px;
+        height: 180px;
+        text-align: center;
+        cursor: pointer;
+        float: left;
+        .hot_img{
+            img{
+              width: 105px;
+              height: 112px;
+              display: inline-block;
+            }
+        }
+        p{
+          line-height: 26px;
+          color: #666;
+          font:{
+            size: 14px;
+          }
+          &.intelligent{
+            color: #333;
+            font:{
+              size: 18px;
+              weight: bold;
+            }
+            .hot_red{
+              width: 20px;
+              height: 12px;
+              background-color: #f00;
+              line-height: 12px;
+              text-align: center;
+              color:#f7eb57;
+              display: inline-block;
+              font:{
+                size: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+/*热销推荐部分结束*/
+
+/*家用电器部分样式开始*/
+
+/*家用电器部分样式结束*/

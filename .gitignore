@@ -1,2 +1,5 @@
 **/.idea
-html/**/*.xml
+.project
+**/.project
+**/stylesheet
+**/.sass-cache
