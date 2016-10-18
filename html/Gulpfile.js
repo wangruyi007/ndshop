@@ -14,7 +14,7 @@ gulp.task('bs', function() {
 gulp.task('sass', function() {
     return gulp.src('./sass/**/*.scss')
         .pipe(sass())
-        .pipe(gulp.dest("stylesheets"))
+        .pipe(gulp.dest("css"))
         .pipe(bs.reload({stream: true}));
 });
 
