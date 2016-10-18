@@ -1,7 +1,7 @@
 @import "variables", "mixin";
 
 /*热销推荐部分开始*/
-#main_module{
+.main_module{
   width: 100%;
   height:auto;
   .hot_title{
@@ -37,6 +37,7 @@
           color: #666;
           font:{
             size: 14px;
+            family:$main-sec-ff;
           }
           &.intelligent{
             color: #333;
@@ -64,11 +65,10 @@
 }
 /*热销推荐部分结束*/
 
-/*家用电器部分样式开始*/
+
   /*家用电器部分样式开始*/
-$width:220px;
-$height:420px;
-#house_electrical{
+
+.house_electrical{
   width: 100%;
   height:$height;
   overflow: hidden;
@@ -94,16 +94,20 @@ $height:420px;
         line-height: 46px;
         background-color: #33b5ff;
         text-align: center;
-        // @include rounded-corners;
+        @include rounded(34px);
         .house_top{
           color: #fefefe;
-          font-size: $main-sec-ff;
+          font:{
+            size:18px;
+            family:$main-sec-ff;
+          }
         }
       }
     //}
     .house_let{
       width: $width;
       background-color: #f2f9ff;
+
       .house_line{
         $width:197px;
         width:$width;
@@ -111,15 +115,16 @@ $height:420px;
         border: {
           bottom:1px;
           style: dashed;
-          color: #858a8e ;
+          color: #858a8e;
         }
         background-color: #f2f9ff;
         padding:6px 0;
+        font-family:$main-sec-ff;
         &:last-child{
           border-bottom:0 ;
         }
         .house_big{
-          line-height: 36px;
+          line-height: 32px;
           color: #333;
           font:{
             size: 16px;
@@ -134,12 +139,27 @@ $height:420px;
           padding-bottom:10px;
           a{
             color: #999;
-            padding-right: 5px;
-            &:nth-child(6){
-              padding-right: 20px;
+            
+            &.house_jia{
+              padding-right: 8px;
+              &:nth-of-type(6){
+                padding-right: 20px;
+              }
+              &:nth-of-type(7){
+                padding-right: 28px;
+              }
             }
-            &:nth-child(7){
-              @extend :nth-child(6);
+            &.life_elec{
+              padding-right: 5px;
+            }
+            &.life_elec02{
+              padding-right: 8px;
+            }
+            &.life_elec03{
+              padding-right: 2px;
+            }
+            &.Kitchen_list{
+              padding-right: 13px;
             }
             &:hover{
               color: #35b5ff;
@@ -152,7 +172,6 @@ $height:420px;
 
   //右边内容部分
   .house_right{
-    //width: 880px;
     float: left;
     border: {
       top: 1px;
@@ -219,20 +238,45 @@ $height:420px;
   height: 50px;
   background: #fff;
   line-height: 50px;
-  img{
-    margin-right: 5px;
-    &.pic01{
-      height: 30px;
-      width: 137px;
-      display: inline-block;
-      line-height: 50px;
+    img{
+      margin: 0 10px;
+      cursor: pointer;
+      display:inline-block;
+      vertical-align: middle;
+      &.pic01{
+        height: 30px;
+        width: 137px;
+        display: inline-block;
+      }
+      &.pic02{
+        height: 40px;
+        width: 80px;
+        display: inline-block;
+      }
+      &.pic03{
+        height: 32px;
+        width: 130px;
+        display: inline-block;
+      }
+      &.pic04{
+        height: 38px;
+        width: 138px;
+        display: inline-block;
+      }
+      &.pic05{
+        height: 34px;
+        width: 135px;
+        display: inline-block;
+      }
+      &.pic06{
+        height: 47px;
+        width: 134px;
+        display: inline-block;
+      }
+      &.pic07{
+        height: 42px;
+        width: 138px;
+        display: inline-block;
+      }
     }
-    &.pic02{
-      height: 50px;
-      width: 80px;
-      display: inline-block;
-      line-height: 50px;
-    }
-  }
-
 }

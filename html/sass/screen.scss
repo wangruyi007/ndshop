@@ -360,6 +360,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 padding:{
                     top:10px;
                 }
+                cursor:pointer;
                 &:last-child{
                     border-bottom:0 none ;
                 }
@@ -528,7 +529,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 float: left;
                 width: 220px;
                 text-align: left;
-                
             
                 dt{
                     line-height: 36px;
