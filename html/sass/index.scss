@@ -4,7 +4,7 @@
 .main_module{
   width: 100%;
   height:auto;
-  margin-bottom: 30px;
+
   .hot_title{
     margin-top:20px;
     .recommend{
@@ -71,9 +71,10 @@
 
 .house_electrical{
   width: 100%;
-  height:$height;
+  height:430px;
   overflow: hidden;
   display: inline-block;
+  margin-top: 20px;
   @at-root .cleafix:after{
       content:".";
       height:0;
@@ -202,7 +203,7 @@
           }
         }
         .pic_text{
-          width: 126px;
+          width: 140px;
           text-align: left;
           margin: 0 auto;
           line-height: 18px;
@@ -210,9 +211,43 @@
             family: $main-sec-ff;
             size:14px;
           }
+          @at-root .pic_text02{
+            width: 180px;
+            text-align: left;
+            margin: 0 auto;
+            line-height: 18px;
+            font:{
+              family: $main-sec-ff;
+              size:14px;
+            }
+            .right_tit{
+              color:#333;
+              line-height: 20px;
+              font-size: 14px;
+
+            }
+            .right_time{
+              & a{
+                padding-right: 10px;
+                color: #f00;
+                font: {
+                  family: $main-sec-ff;
+                  size: 13px;
+                }
+              }
+            }
+            .money{
+              color: #f00;
+              font:{
+                size: 16px;
+                weight: bold;
+              }
+            }
+          }
           .right_tit{
             color:#333;
             line-height: 20px;
+            font-size: 14px;
 
           }
           .right_time{
@@ -295,7 +330,7 @@
 
 .gift_bags{
   width: 100%;
-  height:$height;
+  height:430px;
   overflow: hidden;
   display: inline-block;
   @at-root .cleafix:after{
@@ -362,27 +397,42 @@
           padding-bottom:10px;
           a{
             color: #999;
-            
+            &:hover{
+              color: #ffa242 !important;
+            }
+            &.gift_red{
+              color: #ff0003;
+              text-decoration: underline;
+            }
             &.gift_jia{
-              padding-right: 8px;
+              padding-right: 4px;
+              &:nth-of-type(4){
+                padding-right: 18px;
+              }
+              &:nth-of-type(5){
+                padding-right: 40px;
+              }
               &:nth-of-type(6){
-                padding-right: 20px;
+                padding-right: 30px;
               }
               &:nth-of-type(7){
-                padding-right: 28px;
+                padding-right: 20px;
               }
             }
             &.life_elec{
-              padding-right: 5px;
+              padding-right: 13px;
             }
             &.life_elec02{
-              padding-right: 8px;
+              padding-right: 15px;
             }
             &.life_elec03{
-              padding-right: 2px;
+              padding-right: 15px;
             }
             &.Kitchen_list{
               padding-right: 13px;
+            }
+            &.Kitchen_list02{
+              padding-right: 8px;
             }
             &:hover{
               color: #35b5ff;
@@ -395,13 +445,17 @@
 
   //右边内容部分
   .gift_right{
-    float: left;
+    //float: left;
     border: {
       top: 1px;
       style: solid;
       color: #ffa340;
     }
-    .gift_rpic{
+    display: inline-block;
+    li{
+      float: left;
+
+      &.gift_rpic{
 
       margin-top: 10px;
       .xiang{
@@ -409,7 +463,7 @@
         height: 210px;
         //background-color: #fcf;
         text-align: center;
-        float: left;
+        //float: left;
         //border-right:1px solid #ccc;
         .picture{
           @at-root .pic_bor{
@@ -420,19 +474,85 @@
             border-right:0 none;
           }
           img{
-            width: 128px;
-            height: 135px;
+            width: 149px;
+            height: 139px;
             display: inline-block;
           }
         }
         .pic_text{
-          width: 126px;
+          width: 140px;
           text-align: left;
           margin: 0 auto;
           line-height: 18px;
           font:{
             family: $main-sec-ff;
             size:14px;
+          }
+          @at-root .pic_text02{
+            width: 198px;
+            text-align: left;
+            margin: 0 auto;
+            line-height: 18px;
+            font:{
+              family: $main-sec-ff;
+              size:14px;
+            }
+            .right_tit{
+              color:#333;
+              line-height: 20px;
+              font-size: 14px;
+
+            }
+            .right_time{
+              & a{
+                padding-right: 10px;
+                color: #f00;
+                font: {
+                  family: $main-sec-ff;
+                  size: 13px;
+                }
+              }
+            }
+            .money{
+              color: #f00;
+              font:{
+                size: 16px;
+                weight: bold;
+              }
+            }
+          }
+          @at-root .pic_text03{
+            width: 170px;
+            text-align: left;
+            margin: 0 auto;
+            line-height: 18px;
+            font:{
+              family: $main-sec-ff;
+              size:14px;
+            }
+            .right_tit{
+              color:#333;
+              line-height: 20px;
+              font-size: 14px;
+
+            }
+            .right_time{
+              & a{
+                padding-right: 10px;
+                color: #f00;
+                font: {
+                  family: $main-sec-ff;
+                  size: 13px;
+                }
+              }
+            }
+            .money{
+              color: #f00;
+              font:{
+                size: 16px;
+                weight: bold;
+              }
+            }
           }
           .right_tit{
             color:#333;
@@ -441,7 +561,7 @@
           }
           .right_time{
             & a{
-              padding-right: 5px;
+              padding-right: 10px;
               color: #f00;
               font: {
                 family: $main-sec-ff;
@@ -450,6 +570,7 @@
             }
           }
           .money{
+            text-align: left;
             color: #f00;
             font:{
               size: 16px;
@@ -459,6 +580,68 @@
         }
       }
     }
+    }
+  }
+.gift_brand{
+  width:$width;
+  border: {
+    left: 1px;
+    style: solid;
+    color: #eee;
+  }
+  a{
+    display: inline-block;
+    margin: 5px 0 5px 5px;
+    img{
+      width: 100px;
+      height: 40px;
+      display: inline-block;
+    }
   }
 
+}
 /*礼品箱包部分样式结束*/
+
+
+//全民红包banner
+.adv{
+  width: 100%;
+  height: 100px;
+  margin: 30px 0;
+  a{
+    img{
+      width: 1100px;
+      height: 100px;
+      display: block;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

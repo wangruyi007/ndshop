@@ -111,12 +111,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             cursor:pointer;
             position:relative;
             &.yc_btn{
-                // // height: 14px;
-                // // border-left: 1px solid #ddd;
-                // // line-height: 30px;
-                // .yc_line{
-                //     padding-left: 2px;
-                // }
+                .yc_line{
+                   .phone_sc_icon{
+                        width: 15px;
+                        height: 20px;
+                        display:inline-block;
+                        background: url("/images/head/sc2016img.png") no-repeat 0 0;
+                        vertical-align: middle;
+                        padding-right: 2px;
+                   } 
+                }
+               
             }      
             @at-root .locor{
                 color: #ddd;
@@ -237,16 +242,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         height: 40px;
         background-color: #fd5d5f;
         margin-right: 135px;
+        cursor: pointer;
         .yc_line{
             line-height: 40px;
             .shopping_cart_icon{
-                width: 8px;
-                height: 8px;
+                width: 17px;
+                height: 13px;
                 display: inline-block;
-                background-color: #fff;
                 vertical-align: middle;
-
-                //background: url("images/head/sc2015img.png");
+                background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
             }
             a{
                 @include aclor;
@@ -383,6 +387,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                     a{
                         @include aclor;
                         font-size: 12px;
+                        &.sport{
+                            padding-right: 5px;
+                        }
                     }
                 }
                 .jiantou{
