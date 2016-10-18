@@ -266,7 +266,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         border-bottom: 1px;
         border-style: solid;
         border-color: #fff;
-        padding-top: 10px; }
+        padding-top: 10px;
+        cursor: pointer; }
         .main_box .main_menu ul li:last-child {
           border-bottom: 0 none; }
         .main_box .main_menu ul li h2 {

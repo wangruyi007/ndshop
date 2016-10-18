@@ -1,37 +1,38 @@
 @charset "UTF-8";
 /*热销推荐部分开始*/
-#main_module {
+.main_module {
   width: 100%;
   height: auto; }
-  #main_module .hot_title {
+  .main_module .hot_title {
     margin-top: 20px; }
-    #main_module .hot_title .recommend {
+    .main_module .hot_title .recommend {
       line-height: 40px;
       color: #333;
       font-size: 20px;
       font-weight: bold; }
-    #main_module .hot_title .hot_pic {
+    .main_module .hot_title .hot_pic {
       display: inline-block;
       padding-top: 20px; }
-      #main_module .hot_title .hot_pic .hot_list {
+      .main_module .hot_title .hot_pic .hot_list {
         width: 220px;
         height: 180px;
         text-align: center;
         cursor: pointer;
         float: left; }
-        #main_module .hot_title .hot_pic .hot_list .hot_img img {
+        .main_module .hot_title .hot_pic .hot_list .hot_img img {
           width: 105px;
           height: 112px;
           display: inline-block; }
-        #main_module .hot_title .hot_pic .hot_list p {
+        .main_module .hot_title .hot_pic .hot_list p {
           line-height: 26px;
           color: #666;
-          font-size: 14px; }
-          #main_module .hot_title .hot_pic .hot_list p.intelligent {
+          font-size: 14px;
+          font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
+          .main_module .hot_title .hot_pic .hot_list p.intelligent {
             color: #333;
             font-size: 18px;
             font-weight: bold; }
-            #main_module .hot_title .hot_pic .hot_list p.intelligent .hot_red {
+            .main_module .hot_title .hot_pic .hot_list p.intelligent .hot_red {
               width: 20px;
               height: 12px;
               background-color: #f00;
@@ -43,8 +44,7 @@
 
 /*热销推荐部分结束*/
 /*家用电器部分样式开始*/
-/*家用电器部分样式开始*/
-#house_electrical {
+.house_electrical {
   width: 100%;
   height: 420px;
   overflow: hidden;
@@ -65,10 +65,15 @@
     height: 46px;
     line-height: 46px;
     background-color: #33b5ff;
-    text-align: center; }
+    text-align: center;
+    　　　　-moz-border-top-left-radius: 34px;
+    　　　　-webkit-border-top-left-radius: 34px;
+    　　　　-o-border-top-left-radius: 34px;
+    border-top-left-radius: 34px; }
     .house_content .top .house_top {
       color: #fefefe;
-      font-size: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
+      font-size: 18px;
+      font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
   .house_content .house_let {
     width: 220px;
     background-color: #f2f9ff; }
@@ -79,11 +84,12 @@
       border-style: dashed;
       border-color: #858a8e;
       background-color: #f2f9ff;
-      padding: 6px 0; }
+      padding: 6px 0;
+      font-family: Microsoft YaHei, Arial, Verdana, Helvetica, sans-serif; }
       .house_content .house_let .house_line:last-child {
         border-bottom: 0; }
       .house_content .house_let .house_line .house_big {
-        line-height: 36px;
+        line-height: 32px;
         color: #333;
         font-size: 16px;
         font-weight: bold; }
@@ -93,10 +99,21 @@
         font-size: 14px;
         padding-bottom: 10px; }
         .house_content .house_let .house_line .house_list a {
-          color: #999;
-          padding-right: 5px; }
-          .house_content .house_let .house_line .house_list a:nth-child(6), .house_content .house_let .house_line .house_list a:nth-child(7) {
-            padding-right: 20px; }
+          color: #999; }
+          .house_content .house_let .house_line .house_list a.house_jia {
+            padding-right: 8px; }
+            .house_content .house_let .house_line .house_list a.house_jia:nth-of-type(6) {
+              padding-right: 20px; }
+            .house_content .house_let .house_line .house_list a.house_jia:nth-of-type(7) {
+              padding-right: 28px; }
+          .house_content .house_let .house_line .house_list a.life_elec {
+            padding-right: 5px; }
+          .house_content .house_let .house_line .house_list a.life_elec02 {
+            padding-right: 8px; }
+          .house_content .house_let .house_line .house_list a.life_elec03 {
+            padding-right: 2px; }
+          .house_content .house_let .house_line .house_list a.Kitchen_list {
+            padding-right: 13px; }
           .house_content .house_let .house_line .house_list a:hover {
             color: #35b5ff; }
 
@@ -143,14 +160,35 @@
   background: #fff;
   line-height: 50px; }
   .house_under img {
-    margin-right: 5px; }
+    margin: 0 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle; }
     .house_under img.pic01 {
       height: 30px;
       width: 137px;
-      display: inline-block;
-      line-height: 50px; }
+      display: inline-block; }
     .house_under img.pic02 {
-      height: 50px;
+      height: 40px;
       width: 80px;
-      display: inline-block;
-      line-height: 50px; }
+      display: inline-block; }
+    .house_under img.pic03 {
+      height: 32px;
+      width: 130px;
+      display: inline-block; }
+    .house_under img.pic04 {
+      height: 38px;
+      width: 138px;
+      display: inline-block; }
+    .house_under img.pic05 {
+      height: 34px;
+      width: 135px;
+      display: inline-block; }
+    .house_under img.pic06 {
+      height: 47px;
+      width: 134px;
+      display: inline-block; }
+    .house_under img.pic07 {
+      height: 42px;
+      width: 138px;
+      display: inline-block; }
