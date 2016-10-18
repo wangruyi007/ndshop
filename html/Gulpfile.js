@@ -1,6 +1,7 @@
 var gulp = require('gulp');
 var bs = require('browser-sync').create();
 var sass = require('gulp-sass');
+var sourcemaps = require('gulp-sourcemaps');
 
 gulp.task('bs', function() {
     bs.init({
@@ -13,8 +14,10 @@ gulp.task('bs', function() {
 // 静态服务器 + 监听 scss/html 文件
 gulp.task('sass', function() {
     return gulp.src('./sass/**/*.scss')
+	.pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(gulp.dest("css"))
+	.pipe(sourcemaps.write({includeContent: true}))
+        .pipe(gulp.dest(__dirname+"/css"))
         .pipe(bs.reload({stream: true}));
 });
 
