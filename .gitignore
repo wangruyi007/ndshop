@@ -1,6 +1,7 @@
 **/.idea
 .project
 **/.project
-**/stylesheet
+**/css
 **/.sass-cache
 **/node_modules
+
