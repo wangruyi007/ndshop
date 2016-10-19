@@ -111,12 +111,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             cursor:pointer;
             position:relative;
             &.yc_btn{
-                // // height: 14px;
-                // // border-left: 1px solid #ddd;
-                // // line-height: 30px;
-                // .yc_line{
-                //     padding-left: 2px;
-                // }
+                .yc_line{
+                   .phone_sc_icon{
+                        width: 15px;
+                        height: 20px;
+                        display:inline-block;
+                        background: url("/images/head/sc2016img.png") no-repeat 0 0;
+                        vertical-align: middle;
+                        padding-right: 2px;
+                   } 
+                }
+               
             }      
             @at-root .locor{
                 color: #ddd;
@@ -237,16 +242,15 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         height: 40px;
         background-color: #fd5d5f;
         margin-right: 135px;
+        cursor: pointer;
         .yc_line{
             line-height: 40px;
             .shopping_cart_icon{
-                width: 8px;
-                height: 8px;
+                width: 17px;
+                height: 13px;
                 display: inline-block;
-                background-color: #fff;
                 vertical-align: middle;
-
-                //background: url("images/head/sc2015img.png");
+                background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
             }
             a{
                 @include aclor;
@@ -383,6 +387,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                     a{
                         @include aclor;
                         font-size: 12px;
+                        &.sport{
+                            padding-right: 5px;
+                        }
                     }
                 }
                 .jiantou{
@@ -499,13 +506,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 //service start
     .service{
         width: 100%;
-        height: auto;
+        height: 100px;
         background-color: #fbfbfb;
-        margin-top: 100px;
-        // text-align: center;
+        margin: 60px 0 40px;
         .service_top{
             height:100px;
-            line-height: 100px;
             .service_pic{
                 display:inline-block;
                 img{
@@ -513,44 +518,49 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                     height:53px;
                     display:inline-block;
                 }
-                line-height: 100px;
+                line-height: 145px;
                 text-align: center;
-                padding-top: 10px;
-                padding-right: 50px;
+                padding-right: 55px;
                 }
         
         }
+    }
 
-        .service_center{
-            display:inline-block;
-            clear:both;
-            font-family:$main-sec-ff;
-            dl{
-                float: left;
-                width: 220px;
-                text-align: left;
-            
-                dt{
-                    line-height: 36px;
-                    color:#333;
-                    font: {
-                        size:18px;
-                        weight:bold;
-                        family:$main-sec-ff;
-                    }
-                }
-                dd{
-                    line-height: 26px;
-                    color:#333;
-                    font:{
-                        size:14px;
-                        family:$main-sec-ff;
-                    }
-                }
-                
+    //shop guid
+.service_center{
+    width: 100%;
+    height: auto;
+    clear:both;
+    font-family:$main-sec-ff;
+    dl{
+        float: left;
+        text-align: left;
+        width: 140px;
+        &.shop_all{
+
+            width: 240px;
+
+        }
+        dt{
+            line-height: 36px;
+            color:#333;
+            font: {
+                size:18px;
+                weight:bold;
+                family:$main-sec-ff;
             }
         }
+        dd{
+            line-height: 26px;
+            color:#333;
+            font:{
+                size:14px;
+                family:$main-sec-ff;
+            }
+        }
+
     }
+}
 //service end
 
 
@@ -560,7 +570,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         width: 100%;
         height: auto;
         text-align: center;
-
+        margin-top: 30px;
         .foot_link{
             padding-top: 15px;
             border:{
