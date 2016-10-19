@@ -958,7 +958,7 @@
 
             }
             .right_time{
-              &a{
+              & a{
                 padding-right: 10px;
                 color: #f00;
                 font: {
@@ -997,6 +997,450 @@
 }
 /*手机通讯部分样式结束*/
 
+/*电脑数码部分样式开始*/
+.computer_digital{
+  width: 100%;
+  height:430px;
+  overflow: hidden;
+  display: inline-block;
+  margin: {
+    top:30px;
+  }
+  .computer_content{
+    height: $height;
+    float: left;
+    overflow: hidden;
+
+    .top{
+      height: 46px;
+      line-height: 46px;
+      background-color: #815ce7;
+      text-align: center;
+      @include rounded(34px);
+      .computer_top{
+        color: #fefefe;
+        font:{
+          size:18px;
+          family:$main-sec-ff;
+        }
+      }
+    }
+    //}
+    .computer_let{
+      width: $width;
+      background-color: #f5f1ff;
+
+      .computer_line{
+        $width:197px;
+        width:$width;
+        margin: 0 auto;
+        border: {
+          bottom:1px;
+          style: dashed;
+          color: #858a8e;
+        }
+        background-color: #f5f1ff;
+        padding:6px 0;
+        font-family:$main-sec-ff;
+        &:last-child{
+          border-bottom:0 ;
+        }
+        .computer_big{
+          line-height: 32px;
+          color: #333;
+          font:{
+            size: 16px;
+            weight:bold;
+          }
+        }
+        .computer_list{
+          width: 190px;
+          line-height: 22px;
+          $fontsize:14px;
+          font-size:$fontsize;
+          padding-bottom:10px;
+          a{
+            color: #999;
+            &:hover{
+              color: #815ce7 !important;
+            }
+            &.computer_jia{
+              padding-right: 18px;
+
+            }
+            &.computer_operators{
+              padding-right: 15px;
+
+            }
+            &.accessories_list{
+              padding-right: 8px;
+            }
+            &:hover{
+              color: #35b5ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //右边内容部分
+  .computer_right{
+    border: {
+      top: 1px;
+      style: solid;
+      color: #815ce7;
+    }
+    display: inline-block;
+    li{
+      float: left;
+
+      &.computer_rpic{
+
+        margin-top: 10px;
+        .xiang{
+          width: 218px;
+          height: 210px;
+          text-align: center;
+          .picture{
+            @at-root .pic_bor{
+              border-right: 1px solid #eee;
+            }
+
+            &:nth-child(4){
+              border-right:0 none;
+            }
+            img{
+              height: 118px;
+              display: inline-block;
+              &.computer_pic{
+                margin-top: 28px;
+                height: auto;
+              }
+            }
+          }
+          .pic_text02{
+            width: 190px;
+          }
+          .pic_text{
+             width: 155px;
+             text-align: left;
+             margin: 0 auto;
+             line-height: 20px;
+             font:{
+               family: $main-sec-ff;
+               size:14px;
+             }
+             .right_tit{
+               color:#333;
+               line-height: 20px;
+
+             }
+             .right_time{
+               & a{
+                 padding-right: 10px;
+                 color: #f00;
+                 font: {
+                   family: $main-sec-ff;
+                   size: 13px;
+                 }
+               }
+             }
+             .money{
+               text-align: left;
+               color: #f00;
+               font:{
+                 size: 16px;
+                 weight: bold;
+               }
+             }
+           }
+
+          .pic_text05{
+            width: 208px;
+            text-align: left;
+            margin: 0 auto;
+            line-height: 20px;
+            font:{
+              family: $main-sec-ff;
+              size:14px;
+            }
+            .right_tit{
+              color:#333;
+              line-height: 20px;
+
+            }
+            .right_time{
+              & a{
+                padding-right: 10px;
+                color: #f00;
+                font: {
+                  family: $main-sec-ff;
+                  size: 13px;
+                }
+              }
+            }
+            .money{
+              text-align: left;
+              color: #f00;
+              font:{
+                size: 16px;
+                weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .computer_brand{
+    width:$width;
+    a{
+      display: inline-block;
+      margin:{
+        bottom:15px;
+      }
+      &.computer_img01{
+        width:$width;
+        height: 184px;
+        display: inline-block;
+      }
+      &.computer_img02{
+        width:$width;
+        height: 206px;
+        display: inline-block;
+      }
+    }
+  }
+}
+/*电脑数码部分样式结束*/
+
+/*运动健身部分样式开始*/
+.sport_fitness{
+  width: 100%;
+  height:430px;
+  overflow: hidden;
+  display: inline-block;
+  margin: {
+    top:60px;
+  }
+  .sport_content{
+    height: $height;
+    float: left;
+    overflow: hidden;
+
+    .top{
+      height: 46px;
+      line-height: 46px;
+      background-color: #25b7dc;
+      text-align: center;
+      @include rounded(34px);
+      .sport_top{
+        color: #fefefe;
+        font:{
+          size:18px;
+          family:$main-sec-ff;
+        }
+      }
+    }
+    //}
+    .sport_let{
+      width: $width;
+      background-color: #edfbfe;
+
+      .sport_line{
+        $width:197px;
+        width:$width;
+        margin: 0 auto;
+        border: {
+          bottom:1px;
+          style: dashed;
+          color: #858a8e;
+        }
+        background-color: #edfbfe;
+        padding:6px 0;
+        font-family:$main-sec-ff;
+        &:last-child{
+          border-bottom:0 ;
+        }
+        .sport_big{
+          line-height: 32px;
+          color: #333;
+          font:{
+            size: 16px;
+            weight:bold;
+          }
+        }
+        .sport_list{
+          width: 190px;
+          line-height: 22px;
+          $fontsize:14px;
+          font-size:$fontsize;
+          padding-bottom:10px;
+          a{
+            color: #999;
+            &:hover{
+              color: #815ce7 !important;
+            }
+            &.sport_shoe{
+              padding-right: 10px;
+            }
+            &.sport_life{
+              padding-right: 9px;
+              &:nth-child(5){
+                padding-right: 25px;
+
+              }
+              &:nth-child(6){
+                padding-right: 12px;
+
+              }
+
+            }
+            &.sport_bike{
+              padding-right: 10px;
+              &:nth-child(5){
+                  padding-right: 20px;
+              }
+              &:nth-child(8){
+                  padding-right: 20px;
+              }
+            }
+            &:hover{
+              color: #35b5ff;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  //右边内容部分
+  .sport_right{
+    border: {
+      top: 1px;
+      style: solid;
+      color: #25b7dc;
+    }
+    display: inline-block;
+    li{
+      float: left;
+
+      &.sport_rpic{
+
+        margin-top: 10px;
+        .xiang{
+          width: 218px;
+          height: 210px;
+          text-align: center;
+          .picture{
+            @at-root .pic_bor{
+              border-right: 1px solid #eee;
+            }
+
+            &:nth-child(4){
+              border-right:0 none;
+            }
+            img{
+              height: 120px;
+              display: inline-block;
+            }
+          }
+          .pic_text02{
+            width: 190px;
+          }
+          .pic_text{
+            width: 155px;
+            text-align: left;
+            margin: 0 auto;
+            line-height: 20px;
+            font:{
+              family: $main-sec-ff;
+              size:14px;
+            }
+            .right_tit{
+              color:#333;
+              line-height: 20px;
+
+            }
+            .right_time{
+              & a{
+                padding-right: 10px;
+                color: #f00;
+                font: {
+                  family: $main-sec-ff;
+                  size: 13px;
+                }
+              }
+            }
+            .money{
+              text-align: left;
+              color: #f00;
+              font:{
+                size: 16px;
+                weight: bold;
+              }
+            }
+          }
+
+          .pic_text05{
+            width: 208px;
+            text-align: left;
+            margin: 0 auto;
+            line-height: 20px;
+            font:{
+              family: $main-sec-ff;
+              size:14px;
+            }
+            .right_tit{
+              color:#333;
+              line-height: 20px;
+
+            }
+            .right_time{
+              & a{
+                padding-right: 10px;
+                color: #f00;
+                font: {
+                  family: $main-sec-ff;
+                  size: 13px;
+                }
+              }
+            }
+            .money{
+              text-align: left;
+              color: #f00;
+              font:{
+                size: 16px;
+                weight: bold;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sport_brand{
+    width:$width;
+    a{
+      display: inline-block;
+      margin:{
+        bottom:15px;
+      }
+      &.computer_img01{
+        width:$width;
+        height: 184px;
+        display: inline-block;
+      }
+      &.computer_img02{
+        width:$width;
+        height: 206px;
+        display: inline-block;
+      }
+    }
+  }
+}
+/*运动健身部分样式结束*/
 
 
 
