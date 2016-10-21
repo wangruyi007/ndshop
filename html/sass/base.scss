@@ -13,7 +13,7 @@
  * TOOLS
  *
  * COMPONENTS
- * reset..........................Compass内置浏览器重置样式文件
+ * base..........................内置浏览器重置样式文件
  *
  * BUSINESS
  *
@@ -43,7 +43,6 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
-    font: inherit;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -77,6 +76,7 @@ a{
     text-decoration: none;
     &:hover{
         text-decoration: none;
+        color: #35b5ff;
     }
 }
 
@@ -103,11 +103,10 @@ a{
         width: $wrap-width;
         margin: 0 auto;
     }
-    .yc-adr{
+    .top-add{
         float: left;
-
     }
-    .header-topright{
+    .header-top-r{
         float: right;
         display:block;
         width:auto;
@@ -115,12 +114,21 @@ a{
         line-height:inherit;
         li{ 
             float: left;
-            padding-right: 12px;
-            @extend .header-topright;
+            padding: {
+                right: 12px;
+            }
+            @extend .header-top-r;
             cursor:pointer;
             position:relative;
-            &.yc-btn{
-                .yc-line{
+            &.top_r{
+                line-height: 30px;
+                .top-line{
+                    padding-left: 10px;
+                    border:{
+                        left:1px;
+                        style:solid;
+                        color: #ddd;
+                    }
                    .phone-sc-icon{
                         width: 15px;
                         height: 20px;
@@ -131,10 +139,7 @@ a{
                    } 
                 }
                
-            }      
-            @at-root .locor{
-                color: #ddd;
-             }
+            }
             .red{
                 color: red;
                 text-decoration: underline;
@@ -155,7 +160,6 @@ a{
                     left:5px;
                     top:8px;
                 }
-                //@include transition(all .2s);
             }
         }
     }
@@ -226,7 +230,7 @@ a{
             background: #3db1fa;
             border: 0 none;
             line-height: 1;
-            @include aclor;
+            color: $white;
             font:{
                 family: $headline-ff;
                 size: 16px;
@@ -247,36 +251,39 @@ a{
     .shopping-cart {
         float: right;
         width: 115px;
-        width: 115px;
         height: 40px;
         background-color: #fd5d5f;
         margin-right: 135px;
         cursor: pointer;
-        .yc-line{
-            line-height: 40px;
-            .shopping-cart-icon{
-                width: 17px;
-                height: 13px;
-                display: inline-block;
-                vertical-align: middle;
-                // background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
-            }
-            a{
-                @include aclor;
+        line-height: 40px;
+        .shopping-cart-icon{
+            width: 17px;
+            height: 13px;
+            display: inline-block;
+            vertical-align: middle;
+            // background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
+        }
+        a{
+            color: $white;
+            &.my-cart{
+                font-size: 14px;
+                color: $white;
                 text-align: center;
             }
-
+        }
 
         }
     }
 
     .search-hot {
         width: 514px;
-        height: 20px;
         line-height: 20px;
         overflow: hidden;
         span{
-            @extend a;
+            color:#999;
+            font:{
+                size: 14px;
+            }
         }
         a{
             color:#999;
@@ -287,9 +294,8 @@ a{
                 @extend .red;
                 cursor: pointer;
             }
-            @at-root .red {
-                color: red !important;
-
+            &.red {
+                color: red;
             }
         }
     }
@@ -307,7 +313,7 @@ a{
         style: solid;
         color: #60a2df;
     }
-    ul{
+    .top-nav{
         display:block;
         float:left;
         li{
@@ -321,7 +327,7 @@ a{
             text-align:center;
             cursor:pointer;
             overflow:hidden;
-            &.nav-blue{
+            &.main-nav{
                 padding: 0 0 0 80px;
                 a{
                     font-size: 16px;
@@ -332,17 +338,10 @@ a{
                 height: 40px;
                 display: block;
                 background-color: #0071b3;
-                @include aclor;
+                color: $white;
                 font:{
                     size: 17px;
                     family: $main-sec-ff;
-                }
-            }
-            @at-root a{
-                color:#222 ;
-                &:hover{
-                    text-decoration: none;
-                    color: #35b5ff;
                 }
             }
         }
@@ -351,75 +350,78 @@ a{
 /*nav end*/
 
 //左侧菜单栏开始
-.main-box{
+.sidebar-box{
     width: 100%;
     height:480px;
     //overflow: hidden;
     clear: both;
-    .main-menu{
+    .sidebar-menu{
         width: 228px;
         height:480px;
         background-color: #33b5ff;
         float: left;
         font-family: $main-sec-ff;
-        ul{
+        .sidebar-ul{
             width: 228px;
             
-            li{
+            .sidebar-lis{
                 padding:{
                     top:10px;
                 }
                 cursor:pointer;
 
-                .menu-list{
+                .sidebar-menu-list{
                     width: 202px;
                     margin: 0 auto;
                     position: relative;
                     border:{
                         bottom:1px;
                         style: solid;
-                        @include aclor;
+                        color: $white;
+                    }
+                    color: $white;
+                    h2{
+                        color:$white;
+                        font:{
+                            size:16px;
+                        }
+                        .nav-icon{
+                            height: 15px;
+                            width: 15px;
+                            display: inline-block;
+                            background-color: $white;
+                        }
+                    }
+                    .samll-menu{
+                        line-height: 17px;
+                        padding: 9px 28px 9px 16px;
+
+                        a{
+                            color: $white;
+                            font-size: 12px;
+                            padding-right: 3px;
+                            &.sport{
+                                padding-right: 5px;
+                            }
+                        }
+                    }
+                    .jiantou{
+                        position: absolute;
+                        z-index: 1;
+                        top: 35px;
+                        right: 8px;
+                        width: 5px;
+                        height: 8px;
+                        font: 400 9px/14px consolas;
+                        color: $white;
+                        cursor: pointer;
                     }
                 
                 }
                 .menu-last{
                     border-bottom: 0 none;
                 }
-                h2{
-                    color:#fff;
-                    font:{
-                        size:16px;
-                    }
-                    .nav-icon{
-                        height: 15px;
-                        width: 15px;
-                        display: inline-block;
-                        background-color: #fff;
-                    }
-                }
-                .samll-menu{
-                    line-height: 17px;
-                    padding: 9px 28px 9px 16px;
-                    a{
-                        @include aclor;
-                        font-size: 12px;
-                        padding-right: 3px;
-                        &.sport{
-                            padding-right: 5px;
-                        }
-                    }
-                }
-                .jiantou{
-                    position: absolute;
-                    z-index: 1;
-                    top: 35px;
-                    right: 8px;
-                    width: 5px;
-                    height: 8px;
-                    font: 400 9px/14px consolas;
-                    @include aclor;
-                    cursor: pointer;
-                }
+
             }
         }
     }
@@ -477,9 +479,9 @@ a{
     float: right;
     width: 202px;
     height: 480px;
-    li{
+    .right-word{
         clear: both;
-        .word{
+        .right-text{
             float: left;
             padding:{
                 top:7px;
@@ -505,11 +507,13 @@ a{
                 font-size: 12px;
             }
         }
-        .hotpic{
+        .hot-pic{
+            display: inline-block;
             float: right;
             margin-right: 8px;
         }
-        .auto{
+        .right-img{
+            display: inline-block;
             img{
                 width: 148px;
                 height: 105px;
