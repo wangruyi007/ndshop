@@ -1,11 +1,11 @@
 @import "variables", "mixin";
 
 /*热销推荐部分开始*/
-.main_module{
+.main-module{
   width: 100%;
   height:auto;
 
-  .hot_title{
+  .hot-title{
     margin-top:20px;
     .recommend{
       line-height: 40px;
@@ -15,18 +15,18 @@
         weight: bold;
       }
     }
-    .hot_pic{
+    .hot-pic{
      display: inline-block;
       padding: {
         top:20px;
       }
-      .hot_list{
+      .hot-list{
         width: 220px;
         height: 180px;
         text-align: center;
         cursor: pointer;
         float: left;
-        .hot_img{
+        .hot-img{
             img{
               width: 105px;
               height: 112px;
@@ -46,7 +46,7 @@
               size: 18px;
               weight: bold;
             }
-            .hot_red{
+            .hot-red{
               width: 20px;
               height: 12px;
               background-color: #f00;
@@ -68,7 +68,7 @@
 
 
 /*家用电器部分样式开始*/
-.house_electrical{
+.house-electrical{
   width: 100%;
   height:430px;
   overflow: hidden;
@@ -83,7 +83,7 @@
       zoom:1;
     }
 
-  .house_content{
+  .house-content{
     height: $height;
     float: left;
     overflow: hidden;
@@ -94,7 +94,7 @@
         background-color: #33b5ff;
         text-align: center;
         @include rounded(34px);
-        .house_top{
+        .house-top{
           color: #fefefe;
           font:{
             size:18px;
@@ -103,11 +103,11 @@
         }
       }
     //}
-    .house_let{
+    .house-let{
       width: $width;
       background-color: #f2f9ff;
 
-      .house_line{
+      .house-line{
         $width:197px;
         width:$width;
         margin: 0 auto;
@@ -122,7 +122,7 @@
         &:last-child{
           border-bottom:0 ;
         }
-        .house_big{
+        .house-big{
           line-height: 32px;
           color: #333;
           font:{
@@ -130,7 +130,7 @@
             weight:bold;
           }
         }
-        .house_list{
+        .house-list{
           width: 190px;
           line-height: 22px;
           $fontsize:14px;
@@ -139,7 +139,7 @@
           a{
             color: #999;
             
-            &.house_jia{
+            &.house-jia{
               padding-right: 8px;
               &:nth-of-type(6){
                 padding-right: 20px;
@@ -148,16 +148,16 @@
                 padding-right: 28px;
               }
             }
-            &.life_elec{
+            &.life-elec{
               padding-right: 5px;
             }
-            &.life_elec02{
+            &.life-elec02{
               padding-right: 8px;
             }
-            &.life_elec03{
+            &.life-elec03{
               padding-right: 2px;
             }
-            &.Kitchen_list{
+            &.Kitchen-list{
               padding-right: 13px;
             }
             &:hover{
@@ -170,14 +170,14 @@
   }
 
   //右边内容部分
-  .house_right{
+  .house-right{
     float: left;
     border: {
       top: 1px;
       style: solid;
       color: #60a2df;;
     }
-    .house_rpic{
+    .house-rpic{
 
       margin-top: 9px;
       .xiang{
@@ -196,7 +196,7 @@
             display: inline-block;
           }
         }
-        .pic_text{
+        .pic-text{
           width: 140px;
           text-align: left;
           margin: 0 auto;
@@ -205,13 +205,13 @@
             family: $main-sec-ff;
             size:14px;
           }
-          .right_tit{
+          .right-tit{
             color:#333;
             line-height: 22px;
             font-size: 14px;
 
           }
-          .right_time{
+          .right-time{
             & a{
               padding-right: 5px;
               color: #f00;
@@ -229,7 +229,7 @@
             }
           }
         }
-        .pic_text02{
+        .pic-text02{
           width: 180px;
           text-align: left;
           margin: 0 auto;
@@ -238,13 +238,13 @@
             family: $main-sec-ff;
             size:14px;
           }
-          .right_tit{
+          .right-tit{
             color:#333;
             line-height: 22px;
             font-size: 14px;
 
           }
-          .right_time{
+          .right-time{
             & a{
               padding-right: 10px;
               color: #f00;
@@ -270,7 +270,7 @@
 
 // 家用电器下图片链接部分
 
-.house_under{
+.house-under{
   width: 100%;
   height: 50px;
   background: #fff;
@@ -321,7 +321,7 @@
 
 
 /*礼品箱包部分样式开始*/
-.gift_bags{
+.gift-bags{
   width: 100%;
   height:430px;
   overflow: hidden;
@@ -335,7 +335,7 @@
       zoom:1;
     }
 
-    .gift_content{
+    .gift-content{
       height: $height;
       float: left;
       overflow: hidden;
@@ -346,7 +346,7 @@
           background-color: #ffa340;
           text-align: center;
           @include rounded(34px);
-          .gift_top{
+          .gift-top{
             color: #fefefe;
             font:{
               size:18px;
@@ -355,11 +355,11 @@
           }
         }
       //}
-      .gift_let{
+      .gift-let{
         width: $width;
         background-color: #fff8f0;
 
-        .gift_line{
+        .gift-line{
           $width:197px;
           width:$width;
           margin: 0 auto;
@@ -374,7 +374,7 @@
           &:last-child{
             border-bottom:0 ;
           }
-          .gift_big{
+          .gift-big{
             line-height: 32px;
             color: #333;
             font:{
@@ -382,7 +382,7 @@
               weight:bold;
             }
           }
-          .gift_list{
+          .gift-list{
             width: 190px;
             line-height: 22px;
             $fontsize:14px;
@@ -393,11 +393,11 @@
               &:hover{
                 color: #ffa242 !important;
               }
-              &.gift_red{
+              &.gift-red{
                 color: #ff0003;
                 text-decoration: underline;
               }
-              &.gift_jia{
+              &.gift-jia{
                 padding-right: 4px;
                 &:nth-of-type(4){
                   padding-right: 18px;
@@ -412,19 +412,19 @@
                   padding-right: 20px;
                 }
               }
-              &.life_elec{
+              &.life-elec{
                 padding-right: 13px;
               }
-              &.life_elec02{
+              &.life-elec02{
                 padding-right: 15px;
               }
-              &.life_elec03{
+              &.life-elec03{
                 padding-right: 15px;
               }
-              &.Kitchen_list{
+              &.Kitchen-list{
                 padding-right: 13px;
               }
-              &.Kitchen_list02{
+              &.Kitchen-list02{
                 padding-right: 8px;
               }
               &:hover{
@@ -437,7 +437,7 @@
     }
 
     //右边内容部分
-    .gift_right{
+    .gift-right{
       border: {
         top: 1px;
         style: solid;
@@ -447,7 +447,7 @@
       li{
         float: left;
 
-        &.gift_rpic{
+        &.gift-rpic{
 
         margin-top: 10px;
         .xiang{
@@ -455,7 +455,7 @@
           height: 210px;
           text-align: center;
           .picture{
-            @at-root .pic_bor{
+            @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
 
@@ -467,7 +467,7 @@
               display: inline-block;
             }
           }
-          .pic_text{
+          .pic-text{
             width: 140px;
             text-align: left;
             margin: 0 auto;
@@ -476,7 +476,7 @@
               family: $main-sec-ff;
               size:14px;
             }
-            @at-root .pic_text04{
+            @at-root .pic-text04{
               width: 198px;
               text-align: left;
               margin: 0 auto;
@@ -485,13 +485,13 @@
                 family: $main-sec-ff;
                 size:14px;
               }
-              .right_tit{
+              .right-tit{
                 color:#333;
                 line-height: 22px;
                 font-size: 14px;
 
               }
-              .right_time{
+              .right-time{
                 & a{
                   padding-right: 10px;
                   color: #f00;
@@ -509,7 +509,7 @@
                 }
               }
             }
-            @at-root .pic_text03{
+            @at-root .pic-text03{
               width: 170px;
               text-align: left;
               margin: 0 auto;
@@ -518,13 +518,13 @@
                 family: $main-sec-ff;
                 size:14px;
               }
-              .right_tit{
+              .right-tit{
                 color:#333;
                 line-height: 22px;
                 font-size: 14px;
 
               }
-              .right_time{
+              .right-time{
                 & a{
                   padding-right: 10px;
                   color: #f00;
@@ -542,12 +542,12 @@
                 }
               }
             }
-            .right_tit{
+            .right-tit{
               color:#333;
               line-height: 20px;
 
             }
-            .right_time{
+            .right-time{
               & a{
                 padding-right: 10px;
                 color: #f00;
@@ -570,7 +570,7 @@
       }
       }
     }
-  .gift_brand{
+  .gift-brand{
     width:$width;
     border: {
       left: 1px;
@@ -606,13 +606,13 @@
 }
 
 /*个人美妆部分样式开始*/
-.beauty_personal{
+.beauty-personal{
   width: 100%;
   height:430px;
   overflow: hidden;
   display: inline-block;
   margin-top: 20px;
-  .beauty_content{
+  .beauty-content{
     height: $height;
     float: left;
     overflow: hidden;
@@ -623,7 +623,7 @@
       background-color: #ff3d7c;
       text-align: center;
       @include rounded(34px);
-      .beauty_top{
+      .beauty-top{
         color: #fefefe;
         font:{
           size:18px;
@@ -632,11 +632,11 @@
       }
     }
     //}
-    .beauty_let{
+    .beauty-let{
       width: $width;
       background-color: #ffeef4;
 
-      .beauty_line{
+      .beauty-line{
         $width:197px;
         width:$width;
         margin: 0 auto;
@@ -651,7 +651,7 @@
         &:last-child{
           border-bottom:0 ;
         }
-        .beauty_big{
+        .beauty-big{
           line-height: 32px;
           color: #333;
           font:{
@@ -659,7 +659,7 @@
             weight:bold;
           }
         }
-        .beauty_list{
+        .beauty-list{
           width: 190px;
           line-height: 22px;
           $fontsize:14px;
@@ -670,7 +670,7 @@
             &:hover{
             color: #ff3d7c !important;
           }
-            &.beauty_jia{
+            &.beauty-jia{
               padding-right: 15px;
               // &:nth-of-type(6){
               //   padding-right: 20px;
@@ -679,10 +679,10 @@
               //   padding-right: 28px;
               // }
             }
-            &.body_elec{
+            &.body-elec{
               padding-right: 15px;
             }
-            &.brand_list{
+            &.brand-list{
               padding-right: 18px;
               &:nth-child(3){
                 padding-right: 30px;
@@ -698,14 +698,14 @@
   }
 
   //右边内容部分
-  .beauty_right{
+  .beauty-right{
     float: left;
     border: {
       top: 1px;
       style: solid;
       color: #ff3d7c;
     }
-    .beauty_rpic{
+    .beauty-rpic{
 
       margin-top: 9px;
       .xiang{
@@ -724,10 +724,10 @@
             display: inline-block;
           }
         }
-        .beauty_text{
+        .beauty-text{
           width: 155px !important;
         }
-        .pic_text{
+        .pic-text{
           width: 140px;
           text-align: left;
           margin: 0 auto;
@@ -736,7 +736,7 @@
             family: $main-sec-ff;
             size:14px;
           }
-          @at-root .pic_text02{
+          @at-root .pic-text02{
             width: 180px;
             text-align: left;
             margin: 0 auto;
@@ -745,13 +745,13 @@
               family: $main-sec-ff;
               size:14px;
             }
-            .right_tit{
+            .right-tit{
               color:#333;
               line-height: 22px;
               font-size: 14px;
 
             }
-            .right_time{
+            .right-time{
               & a{
                 padding-right: 10px;
                 color: #f00;
@@ -769,13 +769,13 @@
               }
             }
           }
-          .right_tit{
+          .right-tit{
             color:#333;
             line-height: 20px;
             font-size: 14px;
 
           }
-          .right_time{
+          .right-time{
             & a{
               padding-right: 5px;
               color: #f00;
@@ -801,7 +801,7 @@
 
 // 个人美妆下图片链接部分
 
-.beauty_under{
+.beauty-under{
   width: 100%;
   height: 40px;
   background: #fff;
@@ -819,13 +819,13 @@
 }
 
 /*手机通讯部分样式开始*/
-.mobile_report{
+.mobile-report{
   width: 100%;
   height:430px;
   overflow: hidden;
   display: inline-block;
 
-  .mobile_content{
+  .mobile-content{
     height: $height;
     float: left;
     overflow: hidden;
@@ -836,7 +836,7 @@
       background-color: #0dbc77;
       text-align: center;
       @include rounded(34px);
-      .mobile_top{
+      .mobile-top{
         color: #fefefe;
         font:{
           size:18px;
@@ -845,11 +845,11 @@
       }
     }
     //}
-    .mobile_let{
+    .mobile-let{
       width: $width;
       background-color: #f0fffa;
 
-      .mobile_line{
+      .mobile-line{
         $width:197px;
         width:$width;
         margin: 0 auto;
@@ -864,7 +864,7 @@
         &:last-child{
           border-bottom:0 ;
         }
-        .mobile_big{
+        .mobile-big{
           line-height: 32px;
           color: #333;
           font:{
@@ -872,7 +872,7 @@
             weight:bold;
           }
         }
-        .mobile_list{
+        .mobile-list{
           width: 190px;
           line-height: 22px;
           $fontsize:14px;
@@ -883,11 +883,11 @@
             &:hover{
               color: #0dbc77 !important;
             }
-            &.mobile_jia{
+            &.mobile-jia{
               padding-right: 12px;
 
             }
-            &.mobile_operators{
+            &.mobile-operators{
               padding-right: 10px;
               &:nth-child(3){
                 padding-right: 14px;
@@ -897,7 +897,7 @@
               }
             
             }
-            &.accessories_list{
+            &.accessories-list{
               padding-right: 8px;
             }
             &:hover{
@@ -910,7 +910,7 @@
   }
 
   //右边内容部分
-  .mobile_right{
+  .mobile-right{
     border: {
       top: 1px;
       style: solid;
@@ -920,7 +920,7 @@
     li{
       float: left;
 
-      &.mobile_rpic{
+      &.mobile-rpic{
 
         margin-top: 10px;
         .xiang{
@@ -928,7 +928,7 @@
           height: 210px;
           text-align: center;
           .picture{
-            @at-root .pic_bor{
+            @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
 
@@ -940,10 +940,10 @@
               display: inline-block;
             }
           }
-          .pic_text02{
+          .pic-text02{
             width: 190px;
           }
-          .pic_text{
+          .pic-text{
             width: 155px;
             text-align: left;
             margin: 0 auto;
@@ -952,12 +952,12 @@
               family: $main-sec-ff;
               size:14px;
             }
-            .right_tit{
+            .right-tit{
               color:#333;
               line-height: 20px;
 
             }
-            .right_time{
+            .right-time{
               & a{
                 padding-right: 10px;
                 color: #f00;
@@ -980,7 +980,7 @@
       }
     }
   }
-  .mobile_brand{
+  .mobile-brand{
     width:$width;
     a{
       display: inline-block;
@@ -998,7 +998,7 @@
 /*手机通讯部分样式结束*/
 
 /*电脑数码部分样式开始*/
-.computer_digital{
+.computer-digital{
   width: 100%;
   height:430px;
   overflow: hidden;
@@ -1006,7 +1006,7 @@
   margin: {
     top:30px;
   }
-  .computer_content{
+  .computer-content{
     height: $height;
     float: left;
     overflow: hidden;
@@ -1017,7 +1017,7 @@
       background-color: #815ce7;
       text-align: center;
       @include rounded(34px);
-      .computer_top{
+      .computer-top{
         color: #fefefe;
         font:{
           size:18px;
@@ -1026,11 +1026,11 @@
       }
     }
     //}
-    .computer_let{
+    .computer-let{
       width: $width;
       background-color: #f5f1ff;
 
-      .computer_line{
+      .computer-line{
         $width:197px;
         width:$width;
         margin: 0 auto;
@@ -1045,7 +1045,7 @@
         &:last-child{
           border-bottom:0 ;
         }
-        .computer_big{
+        .computer-big{
           line-height: 32px;
           color: #333;
           font:{
@@ -1053,7 +1053,7 @@
             weight:bold;
           }
         }
-        .computer_list{
+        .computer-list{
           width: 190px;
           line-height: 22px;
           $fontsize:14px;
@@ -1064,15 +1064,15 @@
             &:hover{
               color: #815ce7 !important;
             }
-            &.computer_jia{
+            &.computer-jia{
               padding-right: 18px;
 
             }
-            &.computer_operators{
+            &.computer-operators{
               padding-right: 15px;
 
             }
-            &.accessories_list{
+            &.accessories-list{
               padding-right: 8px;
             }
             &:hover{
@@ -1085,7 +1085,7 @@
   }
 
   //右边内容部分
-  .computer_right{
+  .computer-right{
     border: {
       top: 1px;
       style: solid;
@@ -1095,7 +1095,7 @@
     li{
       float: left;
 
-      &.computer_rpic{
+      &.computer-rpic{
 
         margin-top: 10px;
         .xiang{
@@ -1103,7 +1103,7 @@
           height: 210px;
           text-align: center;
           .picture{
-            @at-root .pic_bor{
+            @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
 
@@ -1113,16 +1113,16 @@
             img{
               height: 118px;
               display: inline-block;
-              &.computer_pic{
+              &.computer-pic{
                 margin-top: 28px;
                 height: auto;
               }
             }
           }
-          .pic_text02{
+          .pic-text02{
             width: 190px;
           }
-          .pic_text{
+          .pic-text{
              width: 155px;
              text-align: left;
              margin: 0 auto;
@@ -1131,12 +1131,12 @@
                family: $main-sec-ff;
                size:14px;
              }
-             .right_tit{
+             .right-tit{
                color:#333;
                line-height: 20px;
 
              }
-             .right_time{
+             .right-time{
                & a{
                  padding-right: 10px;
                  color: #f00;
@@ -1156,7 +1156,7 @@
              }
            }
 
-          .pic_text05{
+          .pic-text05{
             width: 208px;
             text-align: left;
             margin: 0 auto;
@@ -1165,12 +1165,12 @@
               family: $main-sec-ff;
               size:14px;
             }
-            .right_tit{
+            .right-tit{
               color:#333;
               line-height: 20px;
 
             }
-            .right_time{
+            .right-time{
               & a{
                 padding-right: 10px;
                 color: #f00;
@@ -1193,19 +1193,19 @@
       }
     }
   }
-  .computer_brand{
+  .computer-brand{
     width:$width;
     a{
       display: inline-block;
       margin:{
         bottom:15px;
       }
-      &.computer_img01{
+      &.computer-img01{
         width:$width;
         height: 184px;
         display: inline-block;
       }
-      &.computer_img02{
+      &.computer-img02{
         width:$width;
         height: 206px;
         display: inline-block;
@@ -1216,7 +1216,7 @@
 /*电脑数码部分样式结束*/
 
 /*运动健身部分样式开始*/
-.sport_fitness{
+.sport-fitness{
   width: 100%;
   height:430px;
   overflow: hidden;
@@ -1224,7 +1224,7 @@
   margin: {
     top:60px;
   }
-  .sport_content{
+  .sport-content{
     height: $height;
     float: left;
     overflow: hidden;
@@ -1235,7 +1235,7 @@
       background-color: #25b7dc;
       text-align: center;
       @include rounded(34px);
-      .sport_top{
+      .sport-top{
         color: #fefefe;
         font:{
           size:18px;
@@ -1244,11 +1244,11 @@
       }
     }
     //}
-    .sport_let{
+    .sport-let{
       width: $width;
       background-color: #edfbfe;
 
-      .sport_line{
+      .sport-line{
         $width:197px;
         width:$width;
         margin: 0 auto;
@@ -1263,7 +1263,7 @@
         &:last-child{
           border-bottom:0 ;
         }
-        .sport_big{
+        .sport-big{
           line-height: 32px;
           color: #333;
           font:{
@@ -1271,7 +1271,7 @@
             weight:bold;
           }
         }
-        .sport_list{
+        .sport-list{
           width: 190px;
           line-height: 22px;
           $fontsize:14px;
@@ -1280,12 +1280,12 @@
           a{
             color: #999;
             &:hover{
-              color: #815ce7 !important;
+              color: #25b7dc !important;
             }
-            &.sport_shoe{
+            &.sport-shoe{
               padding-right: 10px;
             }
-            &.sport_life{
+            &.sport-life{
               padding-right: 9px;
               &:nth-child(5){
                 padding-right: 25px;
@@ -1297,7 +1297,7 @@
               }
 
             }
-            &.sport_bike{
+            &.sport-bike{
               padding-right: 10px;
               &:nth-child(5){
                   padding-right: 20px;
@@ -1316,7 +1316,7 @@
   }
 
   //右边内容部分
-  .sport_right{
+  .sport-right{
     border: {
       top: 1px;
       style: solid;
@@ -1326,7 +1326,7 @@
     li{
       float: left;
 
-      &.sport_rpic{
+      &.sport-rpic{
 
         margin-top: 10px;
         .xiang{
@@ -1334,7 +1334,7 @@
           height: 210px;
           text-align: center;
           .picture{
-            @at-root .pic_bor{
+            @at-root .pic-bor{
               border-right: 1px solid #eee;
             }
 
@@ -1346,10 +1346,10 @@
               display: inline-block;
             }
           }
-          .pic_text02{
+          .pic-text02{
             width: 190px;
           }
-          .pic_text{
+          .pic-text{
             width: 155px;
             text-align: left;
             margin: 0 auto;
@@ -1358,12 +1358,12 @@
               family: $main-sec-ff;
               size:14px;
             }
-            .right_tit{
+            .right-tit{
               color:#333;
               line-height: 20px;
 
             }
-            .right_time{
+            .right-time{
               & a{
                 padding-right: 10px;
                 color: #f00;
@@ -1383,7 +1383,7 @@
             }
           }
 
-          .pic_text05{
+          .pic-text05{
             width: 208px;
             text-align: left;
             margin: 0 auto;
@@ -1392,12 +1392,12 @@
               family: $main-sec-ff;
               size:14px;
             }
-            .right_tit{
+            .right-tit{
               color:#333;
               line-height: 20px;
 
             }
-            .right_time{
+            .right-time{
               & a{
                 padding-right: 10px;
                 color: #f00;
@@ -1420,19 +1420,19 @@
       }
     }
   }
-  .sport_brand{
+  .sport-brand{
     width:$width;
     a{
       display: inline-block;
       margin:{
         bottom:15px;
       }
-      &.computer_img01{
+      &.computer-img01{
         width:$width;
         height: 184px;
         display: inline-block;
       }
-      &.computer_img02{
+      &.computer-img02{
         width:$width;
         height: 206px;
         display: inline-block;

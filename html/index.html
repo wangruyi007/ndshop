@@ -6,61 +6,61 @@
 	<title>商城首页</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
-	<link rel="stylesheet" href="css/screen.css" />
+	<link rel="stylesheet" href="css/base.css" />
 	<link rel="stylesheet" href="css/index.css" />		
 </head>
 <body>
 	<header>
-		<div class="header_top">
+		<div class="header-top">
 			<div class="wrap">
-				<div class="yc_adr">
-					<span class="yc_line">运送至：<a href="javascript:void(0)">广州</a></span>
+				<div class="yc-adr">
+					<span class="yc-line">运送至：<a href="javascript:void(0)">广州</a></span>
 				</div>
-				<ul class="header_topright">
+				<ul class="header-topright">
 					<li>你好，请登录<a href="javascript:void(0)" class="red">免费登录</a></li>
 					<li class="locor">|</li>
-					<li class="yc_btn">
-						<span class="yc_line on_red">我的订单<a class="more_icon">&or;</a></span>						
+					<li class="yc-btn">
+						<span class="yc-line on-red">我的订单<a class="more-icon">&or;</a></span>						
 					</li>
 					<li class="locor">|</li>
-					<li class="yc_btn">
-						<span class="yc_line on_red">我的商城<a class="more_icon">&or;</a></span>						
+					<li class="yc-btn">
+						<span class="yc-line on-red">我的商城<a class="more-icon">&or;</a></span>						
 					</li>
 					<li class="locor">|</li>
-					<li class="yc_btn">
-						<span class="yc_line on_red">
-							<i class="phone_sc_icon"><!-- <img src="images/head/sc2016img.png" height="160" width="28" alt="" /> --></i>手机商城
+					<li class="yc-btn">
+						<span class="yc-line on-red">
+							<i class="phone-sc-icon"></i>手机商城
 						</span>
 					</li>
 					<li class="locor">|</li>
-					<li class="yc_btn"><span class="yc_line on_red">客户服务<a class="more_icon">&or;</a></span>
+					<li class="yc-btn"><span class="yc-line on-red">客户服务<a class="more-icon">&or;</a></span>
 					</li>
 				</ul>
 			</div>
 		</div>
-		<div class="header_ls">
+		<div class="header-ls">
 			<div class="wrap">
-				<div class="header_lg">
-					<a href="javascript:void(0)" class="logo" title="NdShop"><img src="images/head/logo.png" alt=""></a>
+				<div class="header-lg">
+					<a href="javascript:void(0)" class="logo" title="NdShop">NdShop</a>
 				</div>
-				<div class="search_wrap">
-					<input type="text" class="search_strip" value="" />
+				<div class="search-wrap">
+					<input type="text" class="search-strip" value="" />
 					<button onclick="search('key');return false;" class="button">
 						<i></i>搜索
 					</button>
 				</div>
-				<div class="shopping_cart" class="yc_btn">
-					<span class="yc_line">
-					  <i class="shopping_cart_icon"></i>
-					  <a class="my_cart">我的购物车<!--<div id="shopping_cart_number"></div>--></a>
+				<div class="shopping-cart" class="yc-btn">
+					<span class="yc-line">
+					  <i class="shopping-cart-icon"></i>
+					  <a class="my-cart">我的购物车<!--<div id="shopping-cart-number"></div>--></a>
 					  <a>&gt;</a>
                   </span>
-					<!--<div class="yc_con" id="cart_content">-->
-						<!--<i id="cart_incon"></i>-->
+					<!--<div class="yc-con" id="cart-content">-->
+						<!--<i id="cart-incon"></i>-->
 						<!--<a>购物车中还没有商品，赶紧选购吧！</a>-->
 					<!--</div>-->
 				</div>
-				<div class="search_hot">
+				<div class="search-hot">
 					<span>热门搜索： </span>
 					<a class="red">情侣套装</a>
 					<a>轻薄羽绒</a>
@@ -71,1276 +71,1304 @@
 				</div>
 			</div>
 		</div>
+		<nav class="nav-box">
+			<div class="wrap">
+				<ul>
+					<li><a href="javascript:void(0)" class="all-goods">全部商品分类</a></li>
+					<li class="nav-blue"><a href="javascript:void(0)">首页</a></li>
+					<li class="nav-blue"><a href="javascript:void(0)">热销推荐</a></li>
+					<li class="nav-blue"><a href="javascript:void(0)">限时抢购</a></li>
+					<li class="nav-blue"><a href="javascript:void(0)">精品数码</a></li>
+					<li class="nav-blue"><a href="javascript:void(0)">品牌目录</a></li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 	<!--导航条-->
-	<nav class="nav-box">
-		<div class="wrap">
-			<ul>
-				<li><a href="javascript:void(0)" class="all_goods">全部商品分类</a></li>
-				<li class="nav_blue"><a href="javascript:void(0)">首页</a></li>
-				<li class="nav_blue"><a href="javascript:void(0)">热销推荐</a></li>
-				<li class="nav_blue"><a href="javascript:void(0)">限时抢购</a></li>
-				<li class="nav_blue"><a href="javascript:void(0)">精品数码</a></li>
-				<li class="nav_blue"><a href="javascript:void(0)">品牌目录</a></li>
-			</ul>
-		</div>
-	</nav>
-	<!--左侧菜单栏-->
-	<div class="main_box">
-		<div class="wrap">
-			<div class="main_menu">
-				<ul>
-					<li>
-						<h2>
-							<i class="nav_icon"></i>
-							家用电器
-						</h2>
-						<div class="samll_menu">
-							<a href="javascript:void(0)">微波炉</a>
-							<a href="javascript:void(0)">冰箱</a>
-							<a href="javascript:void(0)">洗碗机</a>
-							<a href="javascript:void(0)">消毒机</a>
-							<a href="javascript:void(0)">烤箱</a>
-							<a href="javascript:void(0)">洗衣机</a>
-							<a href="javascript:void(0)">干衣机</a>
-							<a href="javascript:void(0)">制冰机</a>
-						</div>
-						<a class="jiantou">&gt;</a>
-					</li>
-					<li>
-						<h2>
-							<i class="nav_icon"></i>
-							礼品箱包
-						</h2>
-						<div class="samll_menu">
-							<a href="javascript:void(0)">手拿包</a>
-							<a href="javascript:void(0)">行李箱</a>
-							<a href="javascript:void(0)">单肩</a>
-							<a href="javascript:void(0)">双肩包</a>
-							<a href="javascript:void(0)">男士商务包</a>
-							<a href="javascript:void(0)">真皮包</a>
-							<a href="javascript:void(0)">PV材质</a>
-						</div>
-						<a class="jiantou">&gt;</a>
-					</li>
-					<li>
-						<h2>
-							<i class="nav_icon"></i>
-							个护美妆
-						</h2>
-						<div class="samll_menu">
-							<a href="javascript:void(0)">护肤品</a>
-							<a href="javascript:void(0)">唇膏</a>
-							<a href="javascript:void(0)">BB霜</a>
-							<a href="javascript:void(0)">美白面膜</a>
-							<a href="javascript:void(0)">眉笔</a>
-							<a href="javascript:void(0)">眼线笔</a>
-							<a href="javascript:void(0)">腮红</a>
-							<a href="javascript:void(0)">妆前乳</a>
-						</div>
-						<a class="jiantou">&gt;</a>
-					</li>
-					<li>
-						<h2>
-							<i class="nav_icon"></i>
-							手机通讯
-						</h2>
-						<div class="samll_menu">
-							<a href="javascript:void(0)">IPHONE7</a>
-							<a href="javascript:void(0)">红米</a>
-							<a href="javascript:void(0)">三星</a>
-							<a href="javascript:void(0)">HTC</a>
-							<a href="javascript:void(0)">华为</a>
-							<a href="javascript:void(0)">OPPO</a>
-							<a href="javascript:void(0)">魅族</a>
-							<a href="javascript:void(0)">中国移动</a>
-						</div>
-						<a class="jiantou">&gt;</a>
-					</li>
-					<li>
-						<h2>
-							<i class="nav_icon"></i>
-							电脑数码
-						</h2>
-						<div class="samll_menu">
-							<a href="javascript:void(0)">微软</a>
-							<a href="javascript:void(0)">华硕</a>
-							<a href="javascript:void(0)">宏碁</a>
-							<a href="javascript:void(0)">DELL</a>
-							<a href="javascript:void(0)">联想</a>
-							<a href="javascript:void(0)">组装机</a>
-							<a href="javascript:void(0)">IMAC一体机</a>
-							<a href="javascript:void(0)">LG</a>
-						</div>
-						<a class="jiantou">&gt;</a>
-					</li>
-					<li>
-						<h2>
-							<i class="nav_icon"></i>
-							运动健身
-						</h2>
-						<div class="samll_menu">
-							<a href="javascript:void(0)">NIKE</a>
-							<a href="javascript:void(0)">阿迪达斯</a>
-							<a href="javascript:void(0)">安踏</a>
-							<a href="javascript:void(0)" class="sport">360</a>
-							<a href="javascript:void(0)">跑步机</a>
-							<a href="javascript:void(0)">按摩器</a>
-							<a href="javascript:void(0)">瑜伽垫</a>
-						</div>
-						<a class="jiantou">&gt;</a>
-					</li>
-				</ul>
-			</div>
-			<!--banner-->
-			<div class="main_banner">
-				<ul class="banner_pic">
-					<li><a href="javascript:void(0)"><img src="images/head/banner01.jpg" alt=""></a></li>
-					<li><a href="javascript:void(0)"><img src="images/head/banner01.jpg" alt=""></a></li>
-					<li><a href="javascript:void(0)"><img src="images/head/banner03.jpg" alt=""></a></li>
-				</ul>
-				<ul class="banner_yuan">
-					<li class="curent"></li>
-					<li></li>
-					<li></li>
-				</ul>
-			</div>
-			<div class="main_right">
-				<ul>
-					<li>
-						<div class="word">
-							<p class="big_w">电视伴侣</p>
-							<p class="samll_w">进口坚果</p>
-						</div>
-						<div class="hotpic">
-							<a href="javascript:void(0)">
-								<img src="images/head/hotpic.png" alt="">
-							</a>
-						</div>
-						<div class="auto">
-							<a href="javascript:void(0)">
-								<img src="images/head/img01.png" alt="">
-							</a>
-						</div>
+	<!--content start-->
+	<div id="content">
+		<!--左侧菜单栏-->
+		<div class="main-box">
+			<div class="wrap">
+				<div class="main-menu">
+					<ul class="main-ul">
+						<li>
+							<div class="menu-list">
+								<h2>
+									<i class="nav-icon"></i>
+									家用电器
+								</h2>
+								<p class="samll-menu">
+									<a href="javascript:void(0)">微波炉</a>
+									<a href="javascript:void(0)">冰箱</a>
+									<a href="javascript:void(0)">洗碗机</a>
+									<a href="javascript:void(0)">消毒机</a>
+									<a href="javascript:void(0)">烤箱</a>
+									<a href="javascript:void(0)">洗衣机</a>
+									<a href="javascript:void(0)">干衣机</a>
+									<a href="javascript:void(0)">制冰机</a>
+								</p>
+								<a class="jiantou">&gt;</a>
+							</div>
 
-					</li>
-					<li>
-						<div class="word">
-							<p class="big_w">植物精华系列</p>
-							<p class="samll_w">欧莱雅洗护合一</p>
-							<p class="samllx_w">7折起</p>
-						</div>
-						<div class="auto">
-							<a href="javascript:void(0)">
-								<img src="images/head/img02.png" alt="">
-							</a>
-						</div>
-					</li>
-					<li>
-						<div class="word">
-							<p class="big_w">现代电子产品</p>
-							<p class="samll_w">全场低至5折</p>
-						</div>
-						<div class="auto">
-							<a href="javascript:void(0)">
-								<img src="images/head/img03.jpg" alt="">
-							</a>
-						</div>
+						</li>
+						<li>
+							<div class="menu-list">
+								<h2>
+									<i class="nav-icon"></i>
+									礼品箱包
+								</h2>
+								<p class="samll-menu">
+									<a href="javascript:void(0)">手拿包</a>
+									<a href="javascript:void(0)">行李箱</a>
+									<a href="javascript:void(0)">单肩</a>
+									<a href="javascript:void(0)">双肩包</a>
+									<a href="javascript:void(0)">男士商务包</a>
+									<a href="javascript:void(0)">真皮包</a>
+									<a href="javascript:void(0)">PV材质</a>
+								</p>
+								<a class="jiantou">&gt;</a>
+							</div>
 
-					</li>
-				</ul>
+						</li>
+						<li>
+							<div class="menu-list">
+								<h2>
+									<i class="nav-icon"></i>
+									个护美妆
+								</h2>
+								<p class="samll-menu">
+									<a href="javascript:void(0)">护肤品</a>
+									<a href="javascript:void(0)">唇膏</a>
+									<a href="javascript:void(0)">BB霜</a>
+									<a href="javascript:void(0)">美白面膜</a>
+									<a href="javascript:void(0)">眉笔</a>
+									<a href="javascript:void(0)">眼线笔</a>
+									<a href="javascript:void(0)">腮红</a>
+									<a href="javascript:void(0)">妆前乳</a>
+								</p>
+								<a class="jiantou">&gt;</a>
+							</div>
+						</li>
+						<li>
+							<div class="menu-list">
+								<h2>
+									<i class="nav-icon"></i>
+									手机通讯
+								</h2>
+								<p class="samll-menu">
+									<a href="javascript:void(0)">IPHONE7</a>
+									<a href="javascript:void(0)">红米</a>
+									<a href="javascript:void(0)">三星</a>
+									<a href="javascript:void(0)">HTC</a>
+									<a href="javascript:void(0)">华为</a>
+									<a href="javascript:void(0)">OPPO</a>
+									<a href="javascript:void(0)">魅族</a>
+									<a href="javascript:void(0)">中国移动</a>
+								</p>
+								<a class="jiantou">&gt;</a>
+							</div>
+
+						</li>
+						<li>
+							<div class="menu-list">
+								<h2>
+									<i class="nav-icon"></i>
+									电脑数码
+								</h2>
+								<p class="samll-menu">
+									<a href="javascript:void(0)">微软</a>
+									<a href="javascript:void(0)">华硕</a>
+									<a href="javascript:void(0)">宏碁</a>
+									<a href="javascript:void(0)">DELL</a>
+									<a href="javascript:void(0)">联想</a>
+									<a href="javascript:void(0)">组装机</a>
+									<a href="javascript:void(0)">IMAC一体机</a>
+									<a href="javascript:void(0)">LG</a>
+								</p>
+								<a class="jiantou">&gt;</a>
+							</div>
+
+						</li>
+						<li>
+							<div class="menu-list menu-last">
+								<h2>
+									<i class="nav-icon"></i>
+									运动健身
+								</h2>
+								<p class="samll-menu">
+									<a href="javascript:void(0)">NIKE</a>
+									<a href="javascript:void(0)">阿迪达斯</a>
+									<a href="javascript:void(0)">安踏</a>
+									<a href="javascript:void(0)" class="sport">360</a>
+									<a href="javascript:void(0)">跑步机</a>
+									<a href="javascript:void(0)">按摩器</a>
+									<a href="javascript:void(0)">瑜伽垫</a>
+								</p>
+								<a class="jiantou">&gt;</a>
+							</div>
+
+						</li>
+					</ul>
+				</div>
+				<!--banner-->
+				<div class="main-banner">
+					<ul class="banner-pic">
+						<li><a href="javascript:void(0)"><img src="images/head/banner01.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0)"><img src="images/head/banner01.jpg" alt=""></a></li>
+						<li><a href="javascript:void(0)"><img src="images/head/banner03.jpg" alt=""></a></li>
+					</ul>
+					<ul class="banner-yuan">
+						<li class="curent"></li>
+						<li></li>
+						<li></li>
+					</ul>
+				</div>
+				<div class="main-right">
+					<ul>
+						<li>
+							<div class="word">
+								<p class="big-w">电视伴侣</p>
+								<p class="samll-w">进口坚果</p>
+							</div>
+							<div class="hotpic">
+								<a href="javascript:void(0)">
+									<img src="images/head/hotpic.png" alt="">
+								</a>
+							</div>
+							<div class="auto">
+								<a href="javascript:void(0)">
+									<img src="images/head/img01.png" alt="">
+								</a>
+							</div>
+
+						</li>
+						<li>
+							<div class="word">
+								<p class="big-w">植物精华系列</p>
+								<p class="samll-w">欧莱雅洗护合一</p>
+								<p class="samllx-w">7折起</p>
+							</div>
+							<div class="auto">
+								<a href="javascript:void(0)">
+									<img src="images/head/img02.png" alt="">
+								</a>
+							</div>
+						</li>
+						<li>
+							<div class="word">
+								<p class="big-w">现代电子产品</p>
+								<p class="samll-w">全场低至5折</p>
+							</div>
+							<div class="auto">
+								<a href="javascript:void(0)">
+									<img src="images/head/img03.jpg" alt="">
+								</a>
+							</div>
+
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
-	</div>
-<!--热销推荐开始-->
-	<div class="main_module">
-		<div class="wrap">
-			<div class="hot_title">
-				<h3 class="recommend">热销推荐</h3>
-				<ul class="hot_pic">
-					<li class="hot_list">
-							<div class="hot_img">
+		<!--热销推荐开始-->
+		<div class="main-module">
+			<div class="wrap">
+				<div class="hot-title">
+					<h3 class="recommend">热销推荐</h3>
+					<ul class="hot-pic">
+						<li class="hot-list">
+							<div class="hot-img">
 								<a href="javascript:void(0)">
 									<img src="images/index/img04.png" alt="">
 								</a>
 							</div>
-							<p class="intelligent"><a href="javascript:void(0)">智能电饭锅 <span class="hot_red">hot</span></a></p>
+							<p class="intelligent"><a href="javascript:void(0)">智能电饭锅 <span class="hot-red">hot</span></a></p>
 							<p><a href="javascript:void(0)">苏泊尔CFXB40FC835-75</a></p>
+						</li>
+						<li class="hot-list">
+							<div class="hot-img">
+								<a href="javascript:void(0)">
+									<img src="images/index/img05.jpg" alt="">
+								</a>
+							</div>
+							<p class="intelligent"><a href="javascript:void(0)">洁厕灵蓝泡泡</p>
+							<p><a href="javascript:void(0)">50个马桶清洁剂</a></p>
+						</li>
+						<li class="hot-list">
+							<div class="hot-img">
+								<a href="javascript:void(0)">
+									<img src="images/index/img06.jpg" alt="">
+								</a>
+							</div>
+							<p class="intelligent"><a href="javascript:void(0)">韩国进口正品</p>
+							<p><a href="javascript:void(0)">LG瑞嫣REEN瑞香洗发水</a></p>
+						</li>
+						<li class="hot-list">
+							<div class="hot-img">
+								<a href="javascript:void(0)">
+									<img src="images/index/img07.jpg" alt="">
+								</a>
+							</div>
+							<p class="intelligent"><a href="javascript:void(0)">法国进口正品</a></p>
+							<p><a href="javascript:void(0)">珍贵水爽肤水祛痘</a></p>
+						</li>
+						<li class="hot-list">
+							<div class="hot-img">
+								<a href="javascript:void(0)">
+									<img src="images/index/img08.jpg" alt="">
+								</a>
+							</div>
+							<p class="intelligent"><a href="javascript:void(0)">英国进口正品</a></p>
+							<p><a href="javascript:void(0)">BOOTS小黄瓜三分钟面膜</a></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--热销推荐结束-->
+
+		<!--家用电器部分开始-->
+		<div class="house-electrical">
+			<div class="wrap cleafix">
+				<ul class="house-content">
+					<li class="top">
+						<h3 class="house-top">家用电器</h3>
 					</li>
-					<li class="hot_list">
-						<div class="hot_img">
-							<a href="javascript:void(0)">
-								<img src="images/index/img05.jpg" alt="">
-							</a>
+					<li class="house-let">
+						<div class="house-line">
+							<p class="house-big">大家电</p>
+							<p class="house-list">
+								<a href="javascript:void(0)" class="house-jia">电饭锅</a>
+								<a href="javascript:void(0)" class="house-jia">冰箱</a>
+								<a href="javascript:void(0)" class="house-jia">微波炉</a>
+								<a href="javascript:void(0)" class="house-jia">空调</a>
+								<a href="javascript:void(0)" class="house-jia">液晶宽屏电视</a>
+								<a href="javascript:void(0)" class="house-jia">家庭影院</a>
+								<a href="javascript:void(0)" class="house-jia">烟机/灶具</a>
+								<a href="javascript:void(0)" class="house-jia">洗衣机</a>
+								<a href="javascript:void(0)" class="house-jia">冰箱</a>
+							</p>
 						</div>
-						<p class="intelligent"><a href="javascript:void(0)">洁厕灵蓝泡泡</p>
-						<p><a href="javascript:void(0)">50个马桶清洁剂</a></p>
+						<div class="house-line">
+							<p class="house-big">生活电器</p>
+							<p class="house-list">
+								<a href="javascript:void(0)" class="life-elec">电风扇</a>
+								<a href="javascript:void(0)" class="life-elec">净化器</a>
+								<a href="javascript:void(0)" class="life-elec">挂烫机/熨斗</a>
+								<a href="javascript:void(0)" class="life-elec02">净水设备</a>
+								<a href="javascript:void(0)" class="life-elec02">冷风扇</a>
+								<a href="javascript:void(0)" class="life-elec02">扫地机</a>
+								<a href="javascript:void(0)" class="life-elec03">收录/音机</a>
+								<a href="javascript:void(0)" class="life-elec03">除湿/干衣机</a>
+								<a href="javascript:void(0)" class="life-elec03">插座</a>
+							</p>
+						</div>
+						<div class="house-line">
+							<p class="house-big">厨房电器</p>
+							<p class="house-list">
+								<a href="javascript:void(0)" class="Kitchen-list">电饭锅</a>
+								<a href="javascript:void(0)" class="Kitchen-list">电磁炉</a>
+								<a href="javascript:void(0)" class="Kitchen-list">电压力锅</a>
+								<a href="javascript:void(0)" class="Kitchen-list">豆浆机</a>
+								<a href="javascript:void(0)" class="Kitchen-list">榨汁机</a>
+								<a href="javascript:void(0)" class="Kitchen-list">多用途锅</a>
+								<a href="javascript:void(0)" class="Kitchen-list">微波炉</a>
+								<a href="javascript:void(0)" class="Kitchen-list">电饼铛</a>
+								<a href="javascript:void(0)" class="Kitchen-list">面包机</a>
+								<a href="javascript:void(0)" class="Kitchen-list">煮蛋器</a>
+								<a href="javascript:void(0)" class="Kitchen-list">酸奶机</a>
+							</p>
+						</div>
 					</li>
-					<li class="hot_list">
-						<div class="hot_img">
-							<a href="javascript:void(0)">
-								<img src="images/index/img06.jpg" alt="">
-							</a>
+				</ul>
+				<ul class="house-right">
+					<li class="house-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img09.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">赛亿电热油汀取暖器</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
 						</div>
-						<p class="intelligent"><a href="javascript:void(0)">韩国进口正品</p>
-						<p><a href="javascript:void(0)">LG瑞嫣REEN瑞香洗发水</a></p>
+						<div class="rline"></div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img10.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">利仁(LIVEN)电饼铛煎烤机</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img11.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">小狗小型超静音除螨仪</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img12.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">松下家用等离子吹风机</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
 					</li>
-					<li class="hot_list">
-						<div class="hot_img">
-							<a href="javascript:void(0)">
-								<img src="images/index/img07.jpg" alt="">
-							</a>
+					<li class="house-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img13.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">小天鹅变频滚筒洗衣机</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
 						</div>
-						<p class="intelligent"><a href="javascript:void(0)">法国进口正品</a></p>
-						<p><a href="javascript:void(0)">珍贵水爽肤水祛痘</a></p>
-					</li>
-					<li class="hot_list">
-						<div class="hot_img">
-							<a href="javascript:void(0)">
-								<img src="images/index/img08.jpg" alt="">
-							</a>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img14.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">贝尔莱德挂烫机双杆蒸汽</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
 						</div>
-						<p class="intelligent"><a href="javascript:void(0)">英国进口正品</a></p>
-						<p><a href="javascript:void(0)">BOOTS小黄瓜三分钟面膜</a></p>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img15.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">史密斯家用净水器1:1净水机</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img16.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">飞科水洗智能电动剃须刀</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
 					</li>
 				</ul>
 			</div>
 		</div>
-	</div>
-	<!--热销推荐结束-->
+		<!--家用电器部分结束-->
 
-	<!--家用电器部分开始-->
-	<div class="house_electrical">
-		<div class="wrap cleafix">
-			<ul class="house_content">
-				<li class="top">
-						<h3 class="house_top">家用电器</h3>
-				</li>
-				<li class="house_let">
-					<div class="house_line">
-						<p class="house_big">大家电</p>
-						<p class="house_list">
-							<a href="javascript:void(0)" class="house_jia">电饭锅</a>
-							<a href="javascript:void(0)" class="house_jia">冰箱</a>
-							<a href="javascript:void(0)" class="house_jia">微波炉</a>
-							<a href="javascript:void(0)" class="house_jia">空调</a>
-							<a href="javascript:void(0)" class="house_jia">液晶宽屏电视</a>
-							<a href="javascript:void(0)" class="house_jia">家庭影院</a>
-							<a href="javascript:void(0)" class="house_jia">烟机/灶具</a>
-							<a href="javascript:void(0)" class="house_jia">洗衣机</a>
-							<a href="javascript:void(0)" class="house_jia">冰箱</a>
-						</p>
-					</div>
-					<div class="house_line">
-						<p class="house_big">生活电器</p>
-						<p class="house_list">
-							<a href="javascript:void(0)" class="life_elec">电风扇</a>
-							<a href="javascript:void(0)" class="life_elec">净化器</a>
-							<a href="javascript:void(0)" class="life_elec">挂烫机/熨斗</a>
-							<a href="javascript:void(0)" class="life_elec02">净水设备</a>
-							<a href="javascript:void(0)" class="life_elec02">冷风扇</a>
-							<a href="javascript:void(0)" class="life_elec02">扫地机</a>
-							<a href="javascript:void(0)" class="life_elec03">收录/音机</a>
-							<a href="javascript:void(0)" class="life_elec03">除湿/干衣机</a>
-							<a href="javascript:void(0)" class="life_elec03">插座</a>
-						</p>
-					</div>
-					<div class="house_line">
-						<p class="house_big">厨房电器</p>
-						<p class="house_list">
-							<a href="javascript:void(0)" class="Kitchen_list">电饭锅</a>
-							<a href="javascript:void(0)" class="Kitchen_list">电磁炉</a>
-							<a href="javascript:void(0)" class="Kitchen_list">电压力锅</a>
-							<a href="javascript:void(0)" class="Kitchen_list">豆浆机</a>
-							<a href="javascript:void(0)" class="Kitchen_list">榨汁机</a>
-							<a href="javascript:void(0)" class="Kitchen_list">多用途锅</a>
-							<a href="javascript:void(0)" class="Kitchen_list">微波炉</a>
-							<a href="javascript:void(0)" class="Kitchen_list">电饼铛</a>
-							<a href="javascript:void(0)" class="Kitchen_list">面包机</a>
-							<a href="javascript:void(0)" class="Kitchen_list">煮蛋器</a>
-							<a href="javascript:void(0)" class="Kitchen_list">酸奶机</a>
-						</p>
-					</div>
-				</li>
-			</ul>
-			<ul class="house_right">
-				<li class="house_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img09.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">赛亿电热油汀取暖器</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="rline"></div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img10.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">利仁(LIVEN)电饼铛煎烤机</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img11.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">小狗小型超静音除螨仪</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img12.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">松下家用等离子吹风机</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-				</li>
-				<li class="house_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img13.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">小天鹅变频滚筒洗衣机</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img14.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">贝尔莱德挂烫机双杆蒸汽</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img15.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">史密斯家用净水器1:1净水机</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img16.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">飞科水洗智能电动剃须刀</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!--家用电器部分结束-->
-
-	<!--家用电器图片链接-->
-	<div class="house_under">
-		<div class="wrap">
-			<!-- <a href="javascript:void(0)" class="outline"> -->
-			<img src="images/index/robam.jpg" class="pic01" alt=""/>
-			<img src="images/index/tcl.jpg" class="pic02" alt=""/>
-			<img src="images/index/philips.jpg" class="pic03" alt=""/>
-			<img src="images/index/samsung.jpg" class="pic04" alt=""/>
-			<img src="images/index/siemens.jpg" class="pic05" alt=""/>
-			<img src="images/index/skyworth.jpg" class="pic06" alt=""/>
-			<img src="images/index/midea.jpg" class="pic07" alt=""/>
-			<!-- </a> -->
-		</div>
-	</div>
-	<!--家用电器图片链接结束-->
-
-	<!--礼品箱包部分开始-->
-	<div class="gift_bags">
-		<div class="wrap cleafix">
-			<ul class="gift_content">
-				<li class="top">
-					<h3 class="gift_top">礼品箱包</h3>
-				</li>
-				<li class="gift_let">
-					<div class="gift_line">
-						<p class="gift_big">精品男包</p>
-						<p class="gift_list">
-							<a href="javascript:void(0)" class="gift_jia gift_red">腰带礼盒</a>
-							<a href="javascript:void(0)" class="gift_jia">商务公文</a>
-							<a href="javascript:void(0)" class="gift_jia">单肩斜跨</a>
-							<a href="javascript:void(0)" class="gift_jia">男士手拿包</a>
-							<a href="javascript:void(0)" class="gift_jia">钱包卡包</a>
-							<a href="javascript:void(0)" class="gift_jia">双肩包</a>
-							<a href="javascript:void(0)" class="gift_jia">钥匙包</a>
-							<a href="javascript:void(0)" class="gift_jia">领带</a>
-						</p>
-					</div>
-					<div class="gift_line">
-						<p class="gift_big">精品女包</p>
-						<p class="gift_list">
-							<a href="javascript:void(0)" class="life_elec">秋冬新品</a>
-							<a href="javascript:void(0)" class="life_elec">单肩包</a>
-							<a href="javascript:void(0)" class="life_elec">双肩包</a>
-							<a href="javascript:void(0)" class="life_elec02">真皮牛皮</a>
-							<a href="javascript:void(0)" class="life_elec02">钱包</a>
-							<a href="javascript:void(0)" class="life_elec02">手提包</a>
-							<a href="javascript:void(0)" class="life_elec03">斜跨包</a>
-							<a href="javascript:void(0)" class="life_elec03">杀手包</a>
-							<a href="javascript:void(0)" class="life_elec03">笑脸包</a>
-						</p>
-					</div>
-					<div class="gift_line">
-						<p class="gift_big">功能箱包</p>
-						<p class="gift_list">
-							<a href="javascript:void(0)" class="Kitchen_list">拉杆箱包</a>
-							<a href="javascript:void(0)" class="Kitchen_list">电脑包</a>
-							<a href="javascript:void(0)" class="Kitchen_list">书包</a>
-							<a href="javascript:void(0)" class="Kitchen_list02">休闲运动</a>
-							<a href="javascript:void(0)" class="Kitchen_list02">旅行包</a>
-							<a href="javascript:void(0)" class="Kitchen_list02">旅行配件</a>
-							<a href="javascript:void(0)" class="Kitchen_list02">创意礼品</a>
-							<a href="javascript:void(0)" class="Kitchen_list02">礼品礼盒</a>
-							<a href="javascript:void(0)" class="Kitchen_list02">收纳箱</a>
-							<a href="javascript:void(0)" class="Kitchen_list">收藏品</a>
-							<a href="javascript:void(0)" class="Kitchen_list">火机</a>
-						</p>
-					</div>
-				</li>
-			</ul>
-			<ul class="gift_right">
-				<li class="gift_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img17.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">老人头正品男士手包</a></p>
-							<p class="right_time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img20.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text03">
-							<p class="right_tit"><a href="javascript:void(0)">法国棒棒糖徽章链条小方包</a></p>
-							<p class="right_time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-				</li>
-				<li class="gift_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img18.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text04">
-							<p class="right_tit"><a href="javascript:void(0)">金利来男包男士手提包头层牛皮</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img21.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text03">
-							<p class="right_tit"><a href="javascript:void(0)">ELLE经典款牛皮三皮套</a></p>
-							<p class="right_time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥999</strong>
-						</div>
-					</div>
-				</li>
-				<li class="gift_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img19.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text04">
-							<p class="right_tit"><a href="javascript:void(0)">KIPLING都市简约百搭附件包</a></p>
-							<p class="right_time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img22.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">姬龙雪女士牛皮单肩包</a></p>
-							<p class="right_time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-				</li>
-				<li class="gift_brand">
-					<a href="javascript:(0)"><img src="images/index/lp_01.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_02.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_03.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_04.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_05.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_06.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_07.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_08.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_09.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_10.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_11.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_12.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_13.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_14.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/lp_15.jpg" alt=""></a>
-				</li>
-			</ul>
-
-		</div>
-	</div>
-	<!--礼品箱包部分结束-->
-	<!--全民红包banner start-->
-	<div class="adv">
-		<div class="wrap">
-			<a href="javascript:void(0)"><img src="images/index/x-banner01.jpg" alt=""></a>
-		</div>
-	</div>
-	<!--全民红包banner end-->
-
-	<!--个人美妆部分开始-->
-	<div class="beauty_personal">
-		<div class="wrap">
-			<ul class="beauty_content">
-				<li class="top">
-					<h3 class="beauty_top">个人美妆</h3>
-				</li>
-				<li class="beauty_let">
-					<div class="beauty_line">
-						<p class="beauty_big">香水彩妆</p>
-						<p class="beauty_list">
-							<a href="javascript:void(0)" class="beauty_jia">男香</a>
-							<a href="javascript:void(0)" class="beauty_jia">女香</a>
-							<a href="javascript:void(0)" class="beauty_jia">腮红</a>
-							<a href="javascript:void(0)" class="beauty_jia">粉饼</a>
-							<a href="javascript:void(0)" class="beauty_jia">口红</a>
-							<a href="javascript:void(0)" class="beauty_jia">洗甲水</a>
-							<a href="javascript:void(0)" class="beauty_jia">美容工具</a>
-							<a href="javascript:void(0)" class="beauty_jia">眼线笔</a>
-							<a href="javascript:void(0)" class="beauty_jia">BB霜</a>
-							<a href="javascript:void(0)" class="beauty_jia">妆前乳</a>
-						</p>
-					</div>
-					<div class="beauty_line">
-						<p class="beauty_big">身体护理</p>
-						<p class="beauty_list">
-							<a href="javascript:void(0)" class="body_elec">沐浴露</a>
-							<a href="javascript:void(0)" class="body_elec">身体乳</a>
-							<a href="javascript:void(0)" class="body_elec">护发素</a>
-							<a href="javascript:void(0)" class="body_elec">染发剂</a>
-							<a href="javascript:void(0)" class="body_elec">洗发露</a>
-							<a href="javascript:void(0)" class="body_elec">润肤霜</a>
-							<a href="javascript:void(0)" class="body_elec">牙膏/牙刷</a>
-							<a href="javascript:void(0)" class="body_elec">漱口水</a>
-							<a href="javascript:void(0)" class="body_elec">浴盐</a>
-						</p>
-					</div>
-					<div class="beauty_line">
-						<p class="beauty_big">精选品牌</p>
-						<p class="beauty_list">
-							<a href="javascript:void(0)" class="brand_list">兰芝</a>
-							<a href="javascript:void(0)" class="brand_list">御泥坊</a>
-							<a href="javascript:void(0)" class="brand_list">大宝</a>
-							<a href="javascript:void(0)" class="brand_list">韩后</a>
-							<a href="javascript:void(0)" class="brand_list">施华蔻</a>
-							<a href="javascript:void(0)" class="brand_list">曼秀雷敦</a>
-							<a href="javascript:void(0)" class="brand_list">美肤宝</a>
-							<a href="javascript:void(0)" class="brand_list">力士</a>
-							<a href="javascript:void(0)" class="brand_list">悦风吟诗</a>
-							<a href="javascript:void(0)" class="brand_list">珀莱雅</a>
-							<a href="javascript:void(0)" class="brand_list">泊美</a>
-						</p>
-					</div>
-				</li>
-			</ul>
-			<ul class="beauty_right">
-				<li class="beauty_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img23.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">共振享气韵生系列礼盒</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="rline"></div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img24.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">CALVIN KLEIN ONE香水</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img25.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text beauty_text">
-							<p class="right_tit"><a href="javascript:void(0)">赫拉牛羊乳双重面部护理</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img26.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text beauty_text">
-							<p class="right_tit"><a href="javascript:void(0)">科莱丽洁面 声波洁面仪</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-				</li>
-				<li class="beauty_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img27.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">嘉媚乐茶树精油手工皂</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img28.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">魔法世家水果补水面膜</a></p>
-							<p class="right_time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img29.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">百雀羚 水嫩倍现护肤套装</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img30.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">天然之扉野生姜盈润洗发露</a></p>
-							<p class="right_time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥250</strong>
-						</div>
-					</div>
-				</li>
-			</ul>
-		</div>
-	</div>
-	<!--个人美妆部分结束-->
-
-	<!--个人美妆图片链接-->
-	<div class="beauty_under">
-		<div class="wrap">
-			<!-- <a href="javascript:void(0)" class="outline"> -->
-			<img src="images/index/mz_01.jpg" class="pic01" alt=""/>
-			<img src="images/index/mz_02.jpg" class="pic02" alt=""/>
-			<img src="images/index/mz_03.jpg" class="pic03" alt=""/>
-			<img src="images/index/mz_04.jpg" class="pic04" alt=""/>
-			<img src="images/index/mz_05.jpg" class="pic05" alt=""/>
-			<img src="images/index/mz_06.jpg" class="pic06" alt=""/>
-			<img src="images/index/mz_07.jpg" class="pic07" alt=""/>
-			<img src="images/index/mz_08.jpg" class="pic07" alt=""/>
-			<!-- </a> -->
-		</div>
-	</div>
-	<!--个人美妆图片链接结束-->
-
-	<!--手机通讯部分开始-->
-	<div class="mobile_report">
-		<div class="wrap cleafix">
-			<ul class="mobile_content">
-				<li class="top">
-					<h3 class="mobile_top">手机通讯</h3>
-				</li>
-				<li class="mobile_let">
-					<div class="mobile_line">
-						<p class="mobile_big">热门推荐</p>
-						<p class="mobile_list">
-							<a href="javascript:void(0)" class="mobile_jia">中兴</a>
-							<a href="javascript:void(0)" class="mobile_jia">华为</a>
-							<a href="javascript:void(0)" class="mobile_jia">三星</a>
-							<a href="javascript:void(0)" class="mobile_jia">荣耀</a>
-							<a href="javascript:void(0)" class="mobile_jia">锤子T2</a>
-							<a href="javascript:void(0)" class="mobile_jia">VIVO</a>
-							<a href="javascript:void(0)" class="mobile_jia">诺基亚</a>
-							<a href="javascript:void(0)" class="mobile_jia">OPPO</a>
-							<a href="javascript:void(0)" class="mobile_jia">酷派</a>
-							<a href="javascript:void(0)" class="mobile_jia">金立</a>
-							<a href="javascript:void(0)" class="mobile_jia">魅族</a>
-						</p>
-					</div>
-					<div class="mobile_line">
-						<p class="mobile_big">运营商</p>
-						<p class="mobile_list">
-							<a href="javascript:void(0)" class="mobile_operators">营业厅</a>
-							<a href="javascript:void(0)" class="mobile_operators">选号码</a>
-							<a href="javascript:void(0)" class="mobile_operators">4G套餐</a>
-							<a href="javascript:void(0)" class="mobile_operators">中国联通</a>
-							<a href="javascript:void(0)" class="mobile_operators">中国移动</a>
-							<a href="javascript:void(0)" class="mobile_operators">合约机</a>
-							<a href="javascript:void(0)" class="mobile_operators">立即充值</a>
-							<a href="javascript:void(0)" class="mobile_operators">装宽带</a>
-						</p>
-					</div>
-					<div class="mobile_line">
-						<p class="mobile_big">手机配件</p>
-						<p class="mobile_list">
-							<a href="javascript:void(0)" class="accessories_list">移动电源</a>
-							<a href="javascript:void(0)" class="accessories_list">蓝牙耳机</a>
-							<a href="javascript:void(0)" class="accessories_list">手机壳</a>
-							<a href="javascript:void(0)" class="accessories_list">手机贴膜</a>
-							<a href="javascript:void(0)" class="accessories_list">数据线</a>
-							<a href="javascript:void(0)" class="accessories_list">手机支架</a>
-							<a href="javascript:void(0)" class="accessories_list">自拍神器</a>
-							<a href="javascript:void(0)" class="accessories_list">充电宝</a>
-							<a href="javascript:void(0)" class="accessories_list">苹果耳机</a>
-							<a href="javascript:void(0)" class="accessories_list">手机保护膜</a>
-						</p>
-					</div>
-				</li>
-			</ul>
-			<ul class="mobile_right">
-				<li class="mobile_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img17.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">APPLE IPHONE 6S 64G</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥4888.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img20.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text">
-							<p class="right_tit"><a href="javascript:void(0)">OPPO A59 3GB+32GB</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1799.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="mobile_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img18.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">三星 GALAXY S7 EDGE32G版</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥5688.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img21.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">华为 G9 青春版 白色 移动联通</a></p>
-							<p class="right_time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1599.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="mobile_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img13.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">VIVO V3M 全网通高配版</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1498.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img14.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text03">
-							<p class="right_tit"><a href="javascript:void(0)">小米 NOTE 黑色 移动双4G</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1099.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="mobile_brand">
-					<a href="javascript:(0)"><img src="images/index/r-banner01.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/r-banner02.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/r-banner03.jpg" alt=""></a>
-					<a href="javascript:(0)"><img src="images/index/r-banner04.jpg" alt=""></a>
-				</li>
-			</ul>
-
-		</div>
-	</div>
-	<!--手机通讯部分结束-->
-	<!--热点banner start-->
-	<div class="adv">
-		<div class="wrap">
-			<a href="javascript:void(0)"><img src="images/index/x-banner02.jpg" alt=""></a>
-		</div>
-	</div>
-	<!--热点banner end-->
-
-	<!--电脑数码部分开始-->
-	<div class="computer_digital">
-		<div class="wrap cleafix">
-			<ul class="computer_content">
-				<li class="top">
-					<h3 class="computer_top">电脑数码</h3>
-				</li>
-				<li class="computer_let">
-					<div class="computer_line">
-						<p class="computer_big">电脑整机</p>
-						<p class="computer_list">
-							<a href="javascript:void(0)" class="computer_jia">笔记本</a>
-							<a href="javascript:void(0)" class="computer_jia">游戏本</a>
-							<a href="javascript:void(0)" class="computer_jia">台式机</a>
-							<a href="javascript:void(0)" class="computer_jia">一体机</a>
-							<a href="javascript:void(0)" class="computer_jia">服务器</a>
-							<a href="javascript:void(0)" class="computer_jia">联想</a>
-							<a href="javascript:void(0)" class="computer_jia">宏碁</a>
-							<a href="javascript:void(0)" class="computer_jia">4G独显</a>
-							<a href="javascript:void(0)" class="computer_jia">华硕</a>
-						</p>
-					</div>
-					<div class="computer_line">
-						<p class="computer_big">电脑配件</p>
-						<p class="computer_list">
-							<a href="javascript:void(0)" class="computer_operators">CPU</a>
-							<a href="javascript:void(0)" class="computer_operators">SDD硬盘</a>
-							<a href="javascript:void(0)" class="computer_operators">显示器</a>
-							<a href="javascript:void(0)" class="computer_operators">显卡</a>
-							<a href="javascript:void(0)" class="computer_operators">组装电脑</a>
-							<a href="javascript:void(0)" class="computer_operators">散热器</a>
-							<a href="javascript:void(0)" class="computer_operators">内存</a>
-							<a href="javascript:void(0)" class="computer_operators">声卡</a>
-						</p>
-					</div>
-					<div class="computer_line">
-						<p class="computer_big">办公设备</p>
-						<p class="computer_list">
-							<a href="javascript:void(0)" class="accessories_list">移动电源</a>
-							<a href="javascript:void(0)" class="accessories_list">蓝牙耳机</a>
-							<a href="javascript:void(0)" class="accessories_list">手机壳</a>
-							<a href="javascript:void(0)" class="accessories_list">手机贴膜</a>
-							<a href="javascript:void(0)" class="accessories_list">数据线</a>
-							<a href="javascript:void(0)" class="accessories_list">手机支架</a>
-							<a href="javascript:void(0)" class="accessories_list">自拍神器</a>
-							<a href="javascript:void(0)" class="accessories_list">充电宝</a>
-							<a href="javascript:void(0)" class="accessories_list">苹果耳机</a>
-							<a href="javascript:void(0)" class="accessories_list">手机保护膜</a>
-						</p>
-					</div>
-				</li>
-			</ul>
-			<ul class="computer_right">
-				<li class="computer_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img37.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text03">
-							<p class="right_tit"><a href="javascript:void(0)">联想(THINKPAD)轻薄E450</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥4888.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img40.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">飞利浦27英寸 AH-IPS 舒视蓝</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥5688.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="computer_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img38.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text05">
-							<p class="right_tit"><a href="javascript:void(0)">APPLE MACBOOOKPRO 笔记本</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥5688.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img41.jpg" alt="" class="computer_pic">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">爱普生CB-SO4 商务型投影机</a></p>
-							<p class="right_time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1599.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="computer_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img39.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">VIVO V3M 全网通高配版</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1498.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img42.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text04">
-							<p class="right_tit"><a href="javascript:void(0)">神舟战神7-SP系列 背光键盘</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥2099.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="computer_brand">
-					<a href="javascript:(0)" class="computer_img01"><img src="images/index/m-banner01.jpg" alt=""></a>
-					<a href="javascript:(0)" class="computer_img02"><img src="images/index/m-banner02.jpg" alt=""></a>
-				</li>
-			</ul>
-
-		</div>
-	</div>
-	<!--电脑数码部分结束-->
-
-	<!--运动健身部分开始-->
-	<div class="sport_fitness">
-		<div class="wrap cleafix">
-			<ul class="sport_content">
-				<li class="top">
-					<h3 class="sport_top">运动健身</h3>
-				</li>
-				<li class="sport_let">
-					<div class="sport_line">
-						<p class="sport_big">运动鞋服</p>
-						<p class="sport_list">
-							<a href="javascript:void(0)" class="sport_shoe">运动鞋包</a>
-							<a href="javascript:void(0)" class="sport_shoe">紧身衣</a>
-							<a href="javascript:void(0)" class="sport_shoe">帆布鞋</a>
-							<a href="javascript:void(0)" class="sport_shoe">休闲鞋</a>
-							<a href="javascript:void(0)" class="sport_shoe">青少年运动</a>
-							<a href="javascript:void(0)" class="sport_shoe">UA</a>
-							<a href="javascript:void(0)" class="sport_shoe">Adidas</a>
-							<a href="javascript:void(0)" class="sport_shoe">converse</a>
-							<a href="javascript:void(0)" class="sport_shoe">斯凯奇</a>
-						</p>
-					</div>
-					<div class="sport_line">
-						<p class="sport_big">户外生活</p>
-						<p class="sport_list">
-							<a href="javascript:void(0)" class="sport_life">户外鞋服</a>
-							<a href="javascript:void(0)" class="sport_life">皮肤衣</a>
-							<a href="javascript:void(0)" class="sport_life">户外装备</a>
-							<a href="javascript:void(0)" class="sport_life">游泳用品</a>
-							<a href="javascript:void(0)" class="sport_life">T袖</a>
-							<a href="javascript:void(0)" class="sport_life">垂钓用品</a>
-							<a href="javascript:void(0)" class="sport_life">帐篷/垫子</a>
-							<a href="javascript:void(0)" class="sport_life">智能手环</a>
-						</p>
-					</div>
-					<div class="sport_line">
-						<p class="sport_big">骑行运动</p>
-						<p class="sport_list">
-							<a href="javascript:void(0)" class="sport_bike">自行车/电动车</a>
-							<a href="javascript:void(0)" class="sport_bike">折叠自行车</a>
-							<a href="javascript:void(0)" class="sport_bike">山地车</a>
-							<a href="javascript:void(0)" class="sport_bike">电动车</a>
-							<a href="javascript:void(0)" class="sport_bike">平衡车</a>
-							<a href="javascript:void(0)" class="sport_bike">头盔</a>
-							<a href="javascript:void(0)" class="sport_bike">电动滑板车</a>
-							<a href="javascript:void(0)" class="sport_bike">装备</a>
-							<a href="javascript:void(0)" class="sport_bike">骑行服</a>
-						</p>
-					</div>
-				</li>
-			</ul>
-			<ul class="sport_right">
-				<li class="sport_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img43.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text04">
-							<p class="right_tit"><a href="javascript:void(0)">颂拓斯巴达勇士限量款登山腕表</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥4888.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img46.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">法国公鸡经典复古运动休闲鞋</a></p>
-							<p class="right_time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥5688.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="sport_rpic">
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img44.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text04">
-							<p class="right_tit"><a href="javascript:void(0)">哥伦比亚16秋冬新品男款防风</a></p>
-							<p class="right_time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥5688.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture pic_bor">
-							<a href="javascript:void(0)">
-								<img src="images/index/img47.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">必迈BMAI 一体织跑步短袖T恤</a></p>
-							<p class="right_time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1599.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="sport_rpic">
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img45.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text02">
-							<p class="right_tit"><a href="javascript:void(0)">小牛电动N1S都市版标准版</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1498.00</strong>
-						</div>
-					</div>
-					<div class="xiang">
-						<div class="picture">
-							<a href="javascript:void(0)">
-								<img src="images/index/img48.jpg" alt="">
-							</a>
-						</div>
-						<div class="pic_text04">
-							<p class="right_tit"><a href="javascript:void(0)">SQUIRT 青春PS4户外刀钳</a></p>
-							<p class="right_time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
-							<strong class="money">￥1099.00</strong>
-						</div>
-					</div>
-				</li>
-				<li class="sport_brand">
-					<a href="javascript:(0)" class="computer_img01"><img src="images/index/b-banner01.jpg" alt=""></a>
-				</li>
-			</ul>
-
-		</div>
-	</div>
-	<!--运动健身部分结束-->
-
-	<!-- service shop start-->
-	<div class="service cleafix">
-		<div class="wrap">
-			<div class="service_top">
-				<a href="javascript:void(0)" class="service_pic"><img src="images/head/fly.png" alt="" /></a>
-				<a href="javascript:void(0)" class="service_pic"><img src="images/head/earth.png" alt="" /></a>
-				<a href="javascript:void(0)" class="service_pic"><img src="images/head/suifei.png" alt="" /></a>
-				<a href="javascript:void(0)" class="service_pic"><img src="images/head/taobao.png" alt="" /></a>
+		<!--家用电器图片链接-->
+		<div class="house-under">
+			<div class="wrap">
+				<!-- <a href="javascript:void(0)" class="outline"> -->
+				<img src="images/index/robam.jpg" class="pic01" alt=""/>
+				<img src="images/index/tcl.jpg" class="pic02" alt=""/>
+				<img src="images/index/philips.jpg" class="pic03" alt=""/>
+				<img src="images/index/samsung.jpg" class="pic04" alt=""/>
+				<img src="images/index/siemens.jpg" class="pic05" alt=""/>
+				<img src="images/index/skyworth.jpg" class="pic06" alt=""/>
+				<img src="images/index/midea.jpg" class="pic07" alt=""/>
+				<!-- </a> -->
 			</div>
 		</div>
-	</div>
-	<div class="service_center">
-		<div class="wrap cleafix">
-			<dl class="shop_all">
-				<dt>购物指南</dt>
-				<dd><a href="javascript:void(0)">购物流程</a></dd>
-				<dd><a href="javascript:void(0)">会员介绍</a></dd>
-				<dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
-				<dd><a href="javascript:void(0)">常见问题</a></dd>
-				<dd><a href="javascript:void(0)">大家电</a></dd>
-				<dd><a href="javascript:void(0)">联系客服</a></dd>
-			</dl>
-			<dl class="shop_all">
-				<dt>配送方式</dt>
-				<dd><a href="javascript:void(0)">上门自提</a></dd>
-				<dd><a href="javascript:void(0)">211显示达</a></dd>
-				<dd><a href="javascript:void(0)">配送服务咨询</a></dd>
-				<dd><a href="javascript:void(0)">配送费收取标准</a></dd>
-				<dd><a href="javascript:void(0)">海外配送</a></dd>
-			</dl>
-			<dl class="shop_all">
-				<dt>支付方式</dt>
-				<dd><a href="javascript:void(0)">货到收款</a></dd>
-				<dd><a href="javascript:void(0)">在线支付</a></dd>
-				<dd><a href="javascript:void(0)">分期付款</a></dd>
-				<dd><a href="javascript:void(0)">邮局汇款</a></dd>
-				<dd><a href="javascript:void(0)">公司转账</a></dd>
+		<!--家用电器图片链接结束-->
 
-			</dl>
-			<dl class="shop_all">
-				<dt>售后服务</dt>
-				<dd><a href="javascript:void(0)">售后政策</a></dd>
-				<dd><a href="javascript:void(0)">价格保护</a></dd>
-				<dd><a href="javascript:void(0)">退款说明</a></dd>
-				<dd><a href="javascript:void(0)">返修、退换货</a></dd>
-				<dd><a href="javascript:void(0)">取消订单</a></dd>
-			</dl>
-			<dl>
-				<dt>特色服务</dt>
-				<dd><a href="javascript:void(0)">夺宝岛</a></dd>
-				<dd><a href="javascript:void(0)">DIY装机</a></dd>
-				<dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
-				<dd><a href="javascript:void(0)">常见问题</a></dd>
-				<dd><a href="javascript:void(0)">大家电</a></dd>
-			</dl>
-		</div>
-	</div>
-	<!-- service shop end-->
+		<!--礼品箱包部分开始-->
+		<div class="gift-bags">
+			<div class="wrap cleafix">
+				<ul class="gift-content">
+					<li class="top">
+						<h3 class="gift-top">礼品箱包</h3>
+					</li>
+					<li class="gift-let">
+						<div class="gift-line">
+							<p class="gift-big">精品男包</p>
+							<p class="gift-list">
+								<a href="javascript:void(0)" class="gift-jia gift-red">腰带礼盒</a>
+								<a href="javascript:void(0)" class="gift-jia">商务公文</a>
+								<a href="javascript:void(0)" class="gift-jia">单肩斜跨</a>
+								<a href="javascript:void(0)" class="gift-jia">男士手拿包</a>
+								<a href="javascript:void(0)" class="gift-jia">钱包卡包</a>
+								<a href="javascript:void(0)" class="gift-jia">双肩包</a>
+								<a href="javascript:void(0)" class="gift-jia">钥匙包</a>
+								<a href="javascript:void(0)" class="gift-jia">领带</a>
+							</p>
+						</div>
+						<div class="gift-line">
+							<p class="gift-big">精品女包</p>
+							<p class="gift-list">
+								<a href="javascript:void(0)" class="life-elec">秋冬新品</a>
+								<a href="javascript:void(0)" class="life-elec">单肩包</a>
+								<a href="javascript:void(0)" class="life-elec">双肩包</a>
+								<a href="javascript:void(0)" class="life-elec02">真皮牛皮</a>
+								<a href="javascript:void(0)" class="life-elec02">钱包</a>
+								<a href="javascript:void(0)" class="life-elec02">手提包</a>
+								<a href="javascript:void(0)" class="life-elec03">斜跨包</a>
+								<a href="javascript:void(0)" class="life-elec03">杀手包</a>
+								<a href="javascript:void(0)" class="life-elec03">笑脸包</a>
+							</p>
+						</div>
+						<div class="gift-line">
+							<p class="gift-big">功能箱包</p>
+							<p class="gift-list">
+								<a href="javascript:void(0)" class="Kitchen-list">拉杆箱包</a>
+								<a href="javascript:void(0)" class="Kitchen-list">电脑包</a>
+								<a href="javascript:void(0)" class="Kitchen-list">书包</a>
+								<a href="javascript:void(0)" class="Kitchen-list02">休闲运动</a>
+								<a href="javascript:void(0)" class="Kitchen-list02">旅行包</a>
+								<a href="javascript:void(0)" class="Kitchen-list02">旅行配件</a>
+								<a href="javascript:void(0)" class="Kitchen-list02">创意礼品</a>
+								<a href="javascript:void(0)" class="Kitchen-list02">礼品礼盒</a>
+								<a href="javascript:void(0)" class="Kitchen-list02">收纳箱</a>
+								<a href="javascript:void(0)" class="Kitchen-list">收藏品</a>
+								<a href="javascript:void(0)" class="Kitchen-list">火机</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="gift-right">
+					<li class="gift-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img17.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">老人头正品男士手包</a></p>
+								<p class="right-time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img20.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text03">
+								<p class="right-tit"><a href="javascript:void(0)">法国棒棒糖徽章链条小方包</a></p>
+								<p class="right-time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+					</li>
+					<li class="gift-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img18.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text04">
+								<p class="right-tit"><a href="javascript:void(0)">金利来男包男士手提包头层牛皮</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img21.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text03">
+								<p class="right-tit"><a href="javascript:void(0)">ELLE经典款牛皮三皮套</a></p>
+								<p class="right-time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥999</strong>
+							</div>
+						</div>
+					</li>
+					<li class="gift-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img19.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text04">
+								<p class="right-tit"><a href="javascript:void(0)">KIPLING都市简约百搭附件包</a></p>
+								<p class="right-time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img22.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">姬龙雪女士牛皮单肩包</a></p>
+								<p class="right-time"><a href="javascript:void(0)">正品保证</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+					</li>
+					<li class="gift-brand">
+						<a href="javascript:(0)"><img src="images/index/lp_01.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_02.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_03.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_04.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_05.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_06.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_07.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_08.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_09.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_10.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_11.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_12.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_13.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_14.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/lp_15.jpg" alt=""></a>
+					</li>
+				</ul>
 
-	<!--footer start-->
- 	<div class="footer">
-		<div class="wrap">
-			<div class="foot_link">
-				<a href="javascript:void(0)">关于我们</a>|
-				<a href="javascript:void(0)">联系我们</a>|
-				<a href="javascript:void(0)">联系客服</a>|
-				<a href="javascript:void(0)">商家入驻</a>|
-				<a href="javascript:void(0)">营销中心</a>|
-				<a href="javascript:void(0)">手机商城</a>|
-				<a href="javascript:void(0)">友情链接</a>|
-				<a href="javascript:void(0)">销售联盟</a>|
-				<a href="javascript:void(0)">ENGLISH SITE</a>|
-				<a href="javascript:void(0)">CONTACT US</a>
-			</div>
-			<div class="autocation">
-				<a href="javascript:void(0)"><img src="images/head/kexin.jpg" alt="" /></a>
-				<a href="javascript:void(0)"><img src="images/head/jywz.jpg" alt="" /></a>
-				<a href="javascript:void(0)"><img src="images/head/inter.jpg" alt="" /></a>
 			</div>
 		</div>
-		
+		<!--礼品箱包部分结束-->
+		<!--全民红包banner start-->
+		<div class="adv">
+			<div class="wrap">
+				<a href="javascript:void(0)"><img src="images/index/x-banner01.jpg" alt=""></a>
+			</div>
+		</div>
+		<!--全民红包banner end-->
+
+		<!--个人美妆部分开始-->
+		<div class="beauty-personal">
+			<div class="wrap">
+				<ul class="beauty-content">
+					<li class="top">
+						<h3 class="beauty-top">个人美妆</h3>
+					</li>
+					<li class="beauty-let">
+						<div class="beauty-line">
+							<p class="beauty-big">香水彩妆</p>
+							<p class="beauty-list">
+								<a href="javascript:void(0)" class="beauty-jia">男香</a>
+								<a href="javascript:void(0)" class="beauty-jia">女香</a>
+								<a href="javascript:void(0)" class="beauty-jia">腮红</a>
+								<a href="javascript:void(0)" class="beauty-jia">粉饼</a>
+								<a href="javascript:void(0)" class="beauty-jia">口红</a>
+								<a href="javascript:void(0)" class="beauty-jia">洗甲水</a>
+								<a href="javascript:void(0)" class="beauty-jia">美容工具</a>
+								<a href="javascript:void(0)" class="beauty-jia">眼线笔</a>
+								<a href="javascript:void(0)" class="beauty-jia">BB霜</a>
+								<a href="javascript:void(0)" class="beauty-jia">妆前乳</a>
+							</p>
+						</div>
+						<div class="beauty-line">
+							<p class="beauty-big">身体护理</p>
+							<p class="beauty-list">
+								<a href="javascript:void(0)" class="body-elec">沐浴露</a>
+								<a href="javascript:void(0)" class="body-elec">身体乳</a>
+								<a href="javascript:void(0)" class="body-elec">护发素</a>
+								<a href="javascript:void(0)" class="body-elec">染发剂</a>
+								<a href="javascript:void(0)" class="body-elec">洗发露</a>
+								<a href="javascript:void(0)" class="body-elec">润肤霜</a>
+								<a href="javascript:void(0)" class="body-elec">牙膏/牙刷</a>
+								<a href="javascript:void(0)" class="body-elec">漱口水</a>
+								<a href="javascript:void(0)" class="body-elec">浴盐</a>
+							</p>
+						</div>
+						<div class="beauty-line">
+							<p class="beauty-big">精选品牌</p>
+							<p class="beauty-list">
+								<a href="javascript:void(0)" class="brand-list">兰芝</a>
+								<a href="javascript:void(0)" class="brand-list">御泥坊</a>
+								<a href="javascript:void(0)" class="brand-list">大宝</a>
+								<a href="javascript:void(0)" class="brand-list">韩后</a>
+								<a href="javascript:void(0)" class="brand-list">施华蔻</a>
+								<a href="javascript:void(0)" class="brand-list">曼秀雷敦</a>
+								<a href="javascript:void(0)" class="brand-list">美肤宝</a>
+								<a href="javascript:void(0)" class="brand-list">力士</a>
+								<a href="javascript:void(0)" class="brand-list">悦风吟诗</a>
+								<a href="javascript:void(0)" class="brand-list">珀莱雅</a>
+								<a href="javascript:void(0)" class="brand-list">泊美</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="beauty-right">
+					<li class="beauty-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img23.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">共振享气韵生系列礼盒</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="rline"></div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img24.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">CALVIN KLEIN ONE香水</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img25.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text beauty-text">
+								<p class="right-tit"><a href="javascript:void(0)">赫拉牛羊乳双重面部护理</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img26.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text beauty-text">
+								<p class="right-tit"><a href="javascript:void(0)">科莱丽洁面 声波洁面仪</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+					</li>
+					<li class="beauty-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img27.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">嘉媚乐茶树精油手工皂</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img28.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">魔法世家水果补水面膜</a></p>
+								<p class="right-time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img29.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">百雀羚 水嫩倍现护肤套装</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img30.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">天然之扉野生姜盈润洗发露</a></p>
+								<p class="right-time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥250</strong>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--个人美妆部分结束-->
+
+		<!--个人美妆图片链接-->
+		<div class="beauty-under">
+			<div class="wrap">
+				<!-- <a href="javascript:void(0)" class="outline"> -->
+				<img src="images/index/mz_01.jpg" class="pic01" alt=""/>
+				<img src="images/index/mz_02.jpg" class="pic02" alt=""/>
+				<img src="images/index/mz_03.jpg" class="pic03" alt=""/>
+				<img src="images/index/mz_04.jpg" class="pic04" alt=""/>
+				<img src="images/index/mz_05.jpg" class="pic05" alt=""/>
+				<img src="images/index/mz_06.jpg" class="pic06" alt=""/>
+				<img src="images/index/mz_07.jpg" class="pic07" alt=""/>
+				<img src="images/index/mz_08.jpg" class="pic07" alt=""/>
+				<!-- </a> -->
+			</div>
+		</div>
+		<!--个人美妆图片链接结束-->
+
+		<!--手机通讯部分开始-->
+		<div class="mobile-report">
+			<div class="wrap cleafix">
+				<ul class="mobile-content">
+					<li class="top">
+						<h3 class="mobile-top">手机通讯</h3>
+					</li>
+					<li class="mobile-let">
+						<div class="mobile-line">
+							<p class="mobile-big">热门推荐</p>
+							<p class="mobile-list">
+								<a href="javascript:void(0)" class="mobile-jia">中兴</a>
+								<a href="javascript:void(0)" class="mobile-jia">华为</a>
+								<a href="javascript:void(0)" class="mobile-jia">三星</a>
+								<a href="javascript:void(0)" class="mobile-jia">荣耀</a>
+								<a href="javascript:void(0)" class="mobile-jia">锤子T2</a>
+								<a href="javascript:void(0)" class="mobile-jia">VIVO</a>
+								<a href="javascript:void(0)" class="mobile-jia">诺基亚</a>
+								<a href="javascript:void(0)" class="mobile-jia">OPPO</a>
+								<a href="javascript:void(0)" class="mobile-jia">酷派</a>
+								<a href="javascript:void(0)" class="mobile-jia">金立</a>
+								<a href="javascript:void(0)" class="mobile-jia">魅族</a>
+							</p>
+						</div>
+						<div class="mobile-line">
+							<p class="mobile-big">运营商</p>
+							<p class="mobile-list">
+								<a href="javascript:void(0)" class="mobile-operators">营业厅</a>
+								<a href="javascript:void(0)" class="mobile-operators">选号码</a>
+								<a href="javascript:void(0)" class="mobile-operators">4G套餐</a>
+								<a href="javascript:void(0)" class="mobile-operators">中国联通</a>
+								<a href="javascript:void(0)" class="mobile-operators">中国移动</a>
+								<a href="javascript:void(0)" class="mobile-operators">合约机</a>
+								<a href="javascript:void(0)" class="mobile-operators">立即充值</a>
+								<a href="javascript:void(0)" class="mobile-operators">装宽带</a>
+							</p>
+						</div>
+						<div class="mobile-line">
+							<p class="mobile-big">手机配件</p>
+							<p class="mobile-list">
+								<a href="javascript:void(0)" class="accessories-list">移动电源</a>
+								<a href="javascript:void(0)" class="accessories-list">蓝牙耳机</a>
+								<a href="javascript:void(0)" class="accessories-list">手机壳</a>
+								<a href="javascript:void(0)" class="accessories-list">手机贴膜</a>
+								<a href="javascript:void(0)" class="accessories-list">数据线</a>
+								<a href="javascript:void(0)" class="accessories-list">手机支架</a>
+								<a href="javascript:void(0)" class="accessories-list">自拍神器</a>
+								<a href="javascript:void(0)" class="accessories-list">充电宝</a>
+								<a href="javascript:void(0)" class="accessories-list">苹果耳机</a>
+								<a href="javascript:void(0)" class="accessories-list">手机保护膜</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="mobile-right">
+					<li class="mobile-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img17.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">APPLE IPHONE 6S 64G</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥4888.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img20.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text">
+								<p class="right-tit"><a href="javascript:void(0)">OPPO A59 3GB+32GB</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1799.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img18.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">三星 GALAXY S7 EDGE32G版</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥5688.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img21.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">华为 G9 青春版 白色 移动联通</a></p>
+								<p class="right-time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1599.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img13.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">VIVO V3M 全网通高配版</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1498.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img14.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text03">
+								<p class="right-tit"><a href="javascript:void(0)">小米 NOTE 黑色 移动双4G</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1099.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="mobile-brand">
+						<a href="javascript:(0)"><img src="images/index/r-banner01.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/r-banner02.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/r-banner03.jpg" alt=""></a>
+						<a href="javascript:(0)"><img src="images/index/r-banner04.jpg" alt=""></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<!--手机通讯部分结束-->
+		<!--热点banner start-->
+		<div class="adv">
+			<div class="wrap">
+				<a href="javascript:void(0)"><img src="images/index/x-banner02.jpg" alt=""></a>
+			</div>
+		</div>
+		<!--热点banner end-->
+
+		<!--电脑数码部分开始-->
+		<div class="computer-digital">
+			<div class="wrap cleafix">
+				<ul class="computer-content">
+					<li class="top">
+						<h3 class="computer-top">电脑数码</h3>
+					</li>
+					<li class="computer-let">
+						<div class="computer-line">
+							<p class="computer-big">电脑整机</p>
+							<p class="computer-list">
+								<a href="javascript:void(0)" class="computer-jia">笔记本</a>
+								<a href="javascript:void(0)" class="computer-jia">游戏本</a>
+								<a href="javascript:void(0)" class="computer-jia">台式机</a>
+								<a href="javascript:void(0)" class="computer-jia">一体机</a>
+								<a href="javascript:void(0)" class="computer-jia">服务器</a>
+								<a href="javascript:void(0)" class="computer-jia">联想</a>
+								<a href="javascript:void(0)" class="computer-jia">宏碁</a>
+								<a href="javascript:void(0)" class="computer-jia">4G独显</a>
+								<a href="javascript:void(0)" class="computer-jia">华硕</a>
+							</p>
+						</div>
+						<div class="computer-line">
+							<p class="computer-big">电脑配件</p>
+							<p class="computer-list">
+								<a href="javascript:void(0)" class="computer-operators">CPU</a>
+								<a href="javascript:void(0)" class="computer-operators">SDD硬盘</a>
+								<a href="javascript:void(0)" class="computer-operators">显示器</a>
+								<a href="javascript:void(0)" class="computer-operators">显卡</a>
+								<a href="javascript:void(0)" class="computer-operators">组装电脑</a>
+								<a href="javascript:void(0)" class="computer-operators">散热器</a>
+								<a href="javascript:void(0)" class="computer-operators">内存</a>
+								<a href="javascript:void(0)" class="computer-operators">声卡</a>
+							</p>
+						</div>
+						<div class="computer-line">
+							<p class="computer-big">办公设备</p>
+							<p class="computer-list">
+								<a href="javascript:void(0)" class="accessories-list">移动电源</a>
+								<a href="javascript:void(0)" class="accessories-list">蓝牙耳机</a>
+								<a href="javascript:void(0)" class="accessories-list">手机壳</a>
+								<a href="javascript:void(0)" class="accessories-list">手机贴膜</a>
+								<a href="javascript:void(0)" class="accessories-list">数据线</a>
+								<a href="javascript:void(0)" class="accessories-list">手机支架</a>
+								<a href="javascript:void(0)" class="accessories-list">自拍神器</a>
+								<a href="javascript:void(0)" class="accessories-list">充电宝</a>
+								<a href="javascript:void(0)" class="accessories-list">苹果耳机</a>
+								<a href="javascript:void(0)" class="accessories-list">手机保护膜</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="computer-right">
+					<li class="computer-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img37.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text03">
+								<p class="right-tit"><a href="javascript:void(0)">联想(THINKPAD)轻薄E450</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥4888.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img40.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">飞利浦27英寸 AH-IPS 舒视蓝</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥5688.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="computer-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img38.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text05">
+								<p class="right-tit"><a href="javascript:void(0)">APPLE MACBOOOKPRO 笔记本</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥5688.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img41.jpg" alt="" class="computer-pic">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">爱普生CB-SO4 商务型投影机</a></p>
+								<p class="right-time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1599.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="computer-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img39.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">VIVO V3M 全网通高配版</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1498.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img42.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text04">
+								<p class="right-tit"><a href="javascript:void(0)">神舟战神7-SP系列 背光键盘</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥2099.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="computer-brand">
+						<a href="javascript:(0)" class="computer-img01"><img src="images/index/m-banner01.jpg" alt=""></a>
+						<a href="javascript:(0)" class="computer-img02"><img src="images/index/m-banner02.jpg" alt=""></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<!--电脑数码部分结束-->
+
+		<!--运动健身部分开始-->
+		<div class="sport-fitness">
+			<div class="wrap cleafix">
+				<ul class="sport-content">
+					<li class="top">
+						<h3 class="sport-top">运动健身</h3>
+					</li>
+					<li class="sport-let">
+						<div class="sport-line">
+							<p class="sport-big">运动鞋服</p>
+							<p class="sport-list">
+								<a href="javascript:void(0)" class="sport-shoe">运动鞋包</a>
+								<a href="javascript:void(0)" class="sport-shoe">紧身衣</a>
+								<a href="javascript:void(0)" class="sport-shoe">帆布鞋</a>
+								<a href="javascript:void(0)" class="sport-shoe">休闲鞋</a>
+								<a href="javascript:void(0)" class="sport-shoe">青少年运动</a>
+								<a href="javascript:void(0)" class="sport-shoe">UA</a>
+								<a href="javascript:void(0)" class="sport-shoe">Adidas</a>
+								<a href="javascript:void(0)" class="sport-shoe">converse</a>
+								<a href="javascript:void(0)" class="sport-shoe">斯凯奇</a>
+							</p>
+						</div>
+						<div class="sport-line">
+							<p class="sport-big">户外生活</p>
+							<p class="sport-list">
+								<a href="javascript:void(0)" class="sport-life">户外鞋服</a>
+								<a href="javascript:void(0)" class="sport-life">皮肤衣</a>
+								<a href="javascript:void(0)" class="sport-life">户外装备</a>
+								<a href="javascript:void(0)" class="sport-life">游泳用品</a>
+								<a href="javascript:void(0)" class="sport-life">T袖</a>
+								<a href="javascript:void(0)" class="sport-life">垂钓用品</a>
+								<a href="javascript:void(0)" class="sport-life">帐篷/垫子</a>
+								<a href="javascript:void(0)" class="sport-life">智能手环</a>
+							</p>
+						</div>
+						<div class="sport-line">
+							<p class="sport-big">骑行运动</p>
+							<p class="sport-list">
+								<a href="javascript:void(0)" class="sport-bike">自行车/电动车</a>
+								<a href="javascript:void(0)" class="sport-bike">折叠自行车</a>
+								<a href="javascript:void(0)" class="sport-bike">山地车</a>
+								<a href="javascript:void(0)" class="sport-bike">电动车</a>
+								<a href="javascript:void(0)" class="sport-bike">平衡车</a>
+								<a href="javascript:void(0)" class="sport-bike">头盔</a>
+								<a href="javascript:void(0)" class="sport-bike">电动滑板车</a>
+								<a href="javascript:void(0)" class="sport-bike">装备</a>
+								<a href="javascript:void(0)" class="sport-bike">骑行服</a>
+							</p>
+						</div>
+					</li>
+				</ul>
+				<ul class="sport-right">
+					<li class="sport-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img43.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text04">
+								<p class="right-tit"><a href="javascript:void(0)">颂拓斯巴达勇士限量款登山腕表</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满800减100</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥4888.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img46.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">法国公鸡经典复古运动休闲鞋</a></p>
+								<p class="right-time"><a href="javascript:void(0)">满3减1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥5688.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="sport-rpic">
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img44.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text04">
+								<p class="right-tit"><a href="javascript:void(0)">哥伦比亚16秋冬新品男款防风</a></p>
+								<p class="right-time"><a href="javascript:void(0)">免邮费</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥5688.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture pic-bor">
+								<a href="javascript:void(0)">
+									<img src="images/index/img47.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">必迈BMAI 一体织跑步短袖T恤</a></p>
+								<p class="right-time"><a href="javascript:void(0)">买2送1</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1599.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="sport-rpic">
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img45.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text02">
+								<p class="right-tit"><a href="javascript:void(0)">小牛电动N1S都市版标准版</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1498.00</strong>
+							</div>
+						</div>
+						<div class="xiang">
+							<div class="picture">
+								<a href="javascript:void(0)">
+									<img src="images/index/img48.jpg" alt="">
+								</a>
+							</div>
+							<div class="pic-text04">
+								<p class="right-tit"><a href="javascript:void(0)">SQUIRT 青春PS4户外刀钳</a></p>
+								<p class="right-time"><a href="javascript:void(0)">3年保修</a><a href="javascript:void(0)">货到付款</a></p>
+								<strong class="money">￥1099.00</strong>
+							</div>
+						</div>
+					</li>
+					<li class="sport-brand">
+						<a href="javascript:(0)" class="computer-img01"><img src="images/index/b-banner01.jpg" alt=""></a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+		<!--运动健身部分结束-->
 	</div>
-	<!--footer end-->
+	<!--content end-->
+
+
+	<!--big footer start-->
+	<footer>
+		<!-- service shop start-->
+		<div class="service cleafix">
+			<div class="wrap">
+				<div class="service-top">
+					<a href="javascript:void(0)" class="service-pic"><img src="images/head/fly.png" alt="" /></a>
+					<a href="javascript:void(0)" class="service-pic"><img src="images/head/earth.png" alt="" /></a>
+					<a href="javascript:void(0)" class="service-pic"><img src="images/head/suifei.png" alt="" /></a>
+					<a href="javascript:void(0)" class="service-pic"><img src="images/head/taobao.png" alt="" /></a>
+				</div>
+			</div>
+		</div>
+		<div class="service-center">
+			<div class="wrap cleafix">
+				<dl class="shop-all">
+					<dt>购物指南</dt>
+					<dd><a href="javascript:void(0)">购物流程</a></dd>
+					<dd><a href="javascript:void(0)">会员介绍</a></dd>
+					<dd><a href="javascript:void(0)">生活旅行/团购</a></dd>
+					<dd><a href="javascript:void(0)">常见问题</a></dd>
+					<dd><a href="javascript:void(0)">大家电</a></dd>
+					<dd><a href="javascript:void(0)">联系客服</a></dd>
+				</dl>
+				<dl class="shop-all">
+					<dt>配送方式</dt>
+					<dd><a href="javascript:void(0)">上门自提</a></dd>
+					<dd><a href="javascript:void(0)">211显示达</a></dd>
+					<dd><a href="javascript:void(0)">配送服务咨询</a></dd>
+					<dd><a href="javascript:void(0)">配送费收取标准</a></dd>
+					<dd><a href="javascript:void(0)">海外配送</a></dd>
+				</dl>
+				<dl class="shop-all">
+					<dt>支付方式</dt>
+					<dd><a href="javascript:void(0)">货到收款</a></dd>
+					<dd><a href="javascript:void(0)">在线支付</a></dd>
+					<dd><a href="javascript:void(0)">分期付款</a></dd>
+					<dd><a href="javascript:void(0)">邮局汇款</a></dd>
+					<dd><a href="javascript:void(0)">公司转账</a></dd>
+
+				</dl>
+				<dl class="shop-all">
+					<dt>售后服务</dt>
+					<dd><a href="javascript:void(0)">售后政策</a></dd>
+					<dd><a href="javascript:void(0)">价格保护</a></dd>
+					<dd><a href="javascript:void(0)">退款说明</a></dd>
+					<dd><a href="javascript:void(0)">返修、退换货</a></dd>
+					<dd><a href="javascript:void(0)">取消订单</a></dd>
+				</dl>
+				<dl>
+					<dt>特色服务</dt>
+					<dd><a href="javascript:void(0)">夺宝岛</a></dd>
+					<dd><a href="javascript:void(0)">DIY装机</a></dd>
+					<dd><a href="javascript:void(0)">生活旅行</a>/团购</dd>
+					<dd><a href="javascript:void(0)">常见问题</a></dd>
+					<dd><a href="javascript:void(0)">大家电</a></dd>
+				</dl>
+			</div>
+		</div>
+		<!-- service shop end-->
+
+		<!--under footer start-->
+		<div class="footer">
+			<div class="wrap">
+				<div class="foot-link">
+					<a href="javascript:void(0)">关于我们</a>|
+					<a href="javascript:void(0)">联系我们</a>|
+					<a href="javascript:void(0)">联系客服</a>|
+					<a href="javascript:void(0)">商家入驻</a>|
+					<a href="javascript:void(0)">营销中心</a>|
+					<a href="javascript:void(0)">手机商城</a>|
+					<a href="javascript:void(0)">友情链接</a>|
+					<a href="javascript:void(0)">销售联盟</a>|
+					<a href="javascript:void(0)">ENGLISH SITE</a>|
+					<a href="javascript:void(0)">CONTACT US</a>
+				</div>
+				<div class="autocation">
+					<a href="javascript:void(0)"><img src="images/head/kexin.jpg" alt="" /></a>
+					<a href="javascript:void(0)"><img src="images/head/jywz.jpg" alt="" /></a>
+					<a href="javascript:void(0)"><img src="images/head/inter.jpg" alt="" /></a>
+				</div>
+			</div>
+
+		</div>
+		<!--under footer end-->
+	</footer>
+	<!--big footer end-->
+
+
 </body>
 </html>

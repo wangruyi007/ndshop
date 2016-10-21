@@ -47,8 +47,9 @@ time, mark, audio, video {
     font-size: 100%;
     vertical-align: baseline;
 }
-html {
+html, body{
     line-height: 1;
+    font-size: 62.5%;
 }
 ol, ul {
     list-style: none;
@@ -65,12 +66,20 @@ caption, th, td {
 q, blockquote {
     quotes: none;
 }
-a img, #header_ls .search_hot span img {
+a img, #header-ls .search-hot span img {
     border: none;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
     display: block;
 }
+a{
+    color: #666;
+    text-decoration: none;
+    &:hover{
+        text-decoration: none;
+    }
+}
+
 
 /*清除浮动样式*/
 .clearfix{
@@ -84,7 +93,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     }
 }
 /*header-top start*/
-.header_top{
+.header-top{
     width: 100%;
     height: 30px;
     background-color: #f3f3f3;
@@ -94,11 +103,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         width: $wrap-width;
         margin: 0 auto;
     }
-    .yc_adr{
+    .yc-adr{
         float: left;
 
     }
-    .header_topright{
+    .header-topright{
         float: right;
         display:block;
         width:auto;
@@ -107,12 +116,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         li{ 
             float: left;
             padding-right: 12px;
-            @extend .header_topright;
+            @extend .header-topright;
             cursor:pointer;
             position:relative;
-            &.yc_btn{
-                .yc_line{
-                   .phone_sc_icon{
+            &.yc-btn{
+                .yc-line{
+                   .phone-sc-icon{
                         width: 15px;
                         height: 20px;
                         display:inline-block;
@@ -131,11 +140,11 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 text-decoration: underline;
                 padding-left: 12px;                                                        
             }
-            .on_red:hover{
+            .on-red:hover{
                 color: red;
                 cursor: pointer;
             }
-            .more_icon{
+            .more-icon{
                 $height: 12px;
                 display:block;
                 height:$height;
@@ -153,14 +162,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 
-.header_ls {
+.header-ls {
     width: 100%;
     height:80px;
     margin: {
         top:17px;
         bottom:30px;
     }
-    .header_lg {
+    .header-lg {
         position: relative;
         z-index: 12;
         float: left;
@@ -171,17 +180,17 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             display: block;
             width: 185px;
             height: 44px;
-            //background-image: url('images/head/logo.png');
-            //background-repeat:no-repeat;
-            //text-indent: -2000px;
+            background-image: url('/images/head/logo.png');
+            background-repeat:no-repeat;
+            text-indent: -2000px;
             padding-left: 45px;
         }
     }
 
-    .search_wrap {
+    .search-wrap {
         float: left;
         height: 44px;
-        .search_strip {
+        .search-strip {
             width: 427px;
             height: 40px;
             line-height:40px;
@@ -235,7 +244,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         }
     }
 
-    .shopping_cart {
+    .shopping-cart {
         float: right;
         width: 115px;
         width: 115px;
@@ -243,14 +252,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         background-color: #fd5d5f;
         margin-right: 135px;
         cursor: pointer;
-        .yc_line{
+        .yc-line{
             line-height: 40px;
-            .shopping_cart_icon{
+            .shopping-cart-icon{
                 width: 17px;
                 height: 13px;
                 display: inline-block;
                 vertical-align: middle;
-                background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
+                // background: url("/images/head/sc2016img.png") 0 -58px no-repeat;
             }
             a{
                 @include aclor;
@@ -261,7 +270,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         }
     }
 
-    .search_hot {
+    .search-hot {
         width: 514px;
         height: 20px;
         line-height: 20px;
@@ -305,17 +314,20 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             float: left;
             height:40px;
             font:{
-                family: Microsoft YaHei;
+                family:$main-sec-ff;
                 size:16px;
             }
             line-height:40px;
             text-align:center;
             cursor:pointer;
             overflow:hidden;
-            &.nav_blue{
+            &.nav-blue{
                 padding: 0 0 0 80px;
+                a{
+                    font-size: 16px;
+                }
             }
-            .all_goods{
+            .all-goods{
                 width: 228px;
                 height: 40px;
                 display: block;
@@ -328,7 +340,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             }
             @at-root a{
                 color:#222 ;
-                @include hover-link;
                 &:hover{
                     text-decoration: none;
                     color: #35b5ff;
@@ -340,53 +351,59 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 /*nav end*/
 
 //左侧菜单栏开始
-.main_box{
+.main-box{
     width: 100%;
     height:480px;
     //overflow: hidden;
     clear: both;
-    .main_menu{
+    .main-menu{
         width: 228px;
         height:480px;
         background-color: #33b5ff;
         float: left;
         font-family: $main-sec-ff;
         ul{
-            width: 200px;
-            margin: 0 auto;
+            width: 228px;
+            
             li{
-                position: relative;
-                border:{
-                    bottom:1px;
-                    style: solid;
-                    @include aclor;
-                }
                 padding:{
                     top:10px;
                 }
                 cursor:pointer;
-                &:last-child{
-                    border-bottom:0 none ;
+
+                .menu-list{
+                    width: 202px;
+                    margin: 0 auto;
+                    position: relative;
+                    border:{
+                        bottom:1px;
+                        style: solid;
+                        @include aclor;
+                    }
+                
+                }
+                .menu-last{
+                    border-bottom: 0 none;
                 }
                 h2{
                     color:#fff;
                     font:{
                         size:16px;
-                        //weight: bold;
                     }
-                    .nav_icon{
+                    .nav-icon{
                         height: 15px;
                         width: 15px;
                         display: inline-block;
                         background-color: #fff;
                     }
                 }
-                .samll_menu{
-                    line-height: 16px;
+                .samll-menu{
+                    line-height: 17px;
                     padding: 9px 28px 9px 16px;
                     a{
                         @include aclor;
                         font-size: 12px;
+                        padding-right: 3px;
                         &.sport{
                             padding-right: 5px;
                         }
@@ -395,7 +412,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 .jiantou{
                     position: absolute;
                     z-index: 1;
-                    top: 43px;
+                    top: 35px;
                     right: 8px;
                     width: 5px;
                     height: 8px;
@@ -410,12 +427,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 //左侧菜单栏结束
 
 //中间banner开始
-    .main_banner{
+    .main-banner{
         width: 670px;
         height: 479px;
         float: left;
         position: relative;
-        .banner_pic{
+        .banner-pic{
             position: relative;
             li{
                 position: absolute;
@@ -431,7 +448,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
                 }
             }
         }
-        .banner_yuan{
+        .banner-yuan{
             position:absolute;
             left: 50%;
             bottom: 20px;
@@ -456,7 +473,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 //中间banner结束
 
 /*右侧图片开始*/
-.main_right{
+.main-right{
     float: right;
     width: 202px;
     height: 480px;
@@ -472,19 +489,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
             font:{
                 family: $main-sec-ff;
             }
-            .big_w{
+            .big-w{
                 color: #333;
                 font:{
                     size:16px;
                     weight: bold;
                 }
             }
-            .samll_w{
+            .samll-w{
                 color: #f00;
                 font-size: 15px;
             }
-            .samllx_w{
-                @extend .samll_w;
+            .samllx-w{
+                @extend .samll-w;
                 font-size: 12px;
             }
         }
@@ -503,15 +520,21 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 /*右侧图片结束*/
 
+
+footer{
+    width: 100%;
+    height: 100%;
+}
+
 //service start
     .service{
         width: 100%;
         height: 100px;
         background-color: #fbfbfb;
         margin: 60px 0 40px;
-        .service_top{
+        .service-top{
             height:100px;
-            .service_pic{
+            .service-pic{
                 display:inline-block;
                 img{
                     width: 212px;
@@ -527,7 +550,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     }
 
     //shop guid
-.service_center{
+.service-center{
     width: 100%;
     height: auto;
     clear:both;
@@ -536,7 +559,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         float: left;
         text-align: left;
         width: 140px;
-        &.shop_all{
+        &.shop-all{
 
             width: 240px;
 
@@ -571,7 +594,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
         height: auto;
         text-align: center;
         margin-top: 30px;
-        .foot_link{
+        .foot-link{
             padding-top: 15px;
             border:{
                 top:1px;
