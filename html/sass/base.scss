@@ -21,7 +21,7 @@
  *
  */
 
-@import "variables", "mixin";
+@import "layout/variables", "layout/mixin";
 
 $browser-minimum-versions: ("ie": "6");
 
@@ -256,6 +256,7 @@ a{
         margin-right: 135px;
         cursor: pointer;
         line-height: 40px;
+
         .shopping-cart-icon{
             width: 17px;
             height: 13px;
