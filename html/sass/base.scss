@@ -21,6 +21,7 @@
  *
  */
 
+
 @import "layout/variables", "layout/mixin";
 
 $browser-minimum-versions: ("ie": "6");
@@ -43,6 +44,7 @@ time, mark, audio, video {
     margin: 0;
     padding: 0;
     border: 0;
+
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -72,6 +74,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
     display: block;
 }
 a{
+
     color: #666;
     text-decoration: none;
     &:hover{
@@ -79,6 +82,7 @@ a{
         color: #35b5ff;
     }
 }
+
 
 
 /*清除浮动样式*/
@@ -133,7 +137,7 @@ a{
                         width: 15px;
                         height: 20px;
                         display:inline-block;
-                        background: url("/images/head/sc2016img.png") no-repeat 0 0;
+                        background: url("/html/images/head/sc2016img.png") no-repeat 0 0;
                         vertical-align: middle;
                         padding-right: 2px;
                    } 
@@ -255,6 +259,7 @@ a{
         background-color: #fd5d5f;
         margin-right: 135px;
         cursor: pointer;
+
         line-height: 40px;
 
         .shopping-cart-icon{
@@ -353,6 +358,7 @@ a{
                     family: $main-sec-ff;
                 }
             }
+
         }
     }
 }
