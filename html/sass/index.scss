@@ -444,11 +444,10 @@
         color: #ffa340;
       }
       display: inline-block;
-      li{
+      .gift-same{
         float: left;
-
-        &.gift-rpic{
-
+      }
+      .gift-rpic{
         margin-top: 10px;
         .xiang{
           width: 218px;
@@ -568,7 +567,7 @@
           }
         }
       }
-      }
+
     }
   .gift-brand{
     width:$width;
@@ -706,7 +705,6 @@
       color: #ff3d7c;
     }
     .beauty-rpic{
-
       margin-top: 9px;
       .xiang{
         width: 218px;
@@ -720,7 +718,7 @@
             border-right:0 none;
           }
           img{
-            height: 136px;
+            height: 126px;
             display: inline-block;
           }
         }
@@ -922,11 +920,10 @@
       color: #0dbc77;
     }
     display: inline-block;
-    li{
+    .mobile-same{
       float: left;
-
-      &.mobile-rpic{
-
+    }
+    .mobile-rpic{
         margin-top: 10px;
         .xiang{
           width: 218px;
@@ -941,7 +938,7 @@
               border-right:0 none;
             }
             img{
-              height: 136px;
+              height: 130px;
               display: inline-block;
             }
           }
@@ -983,7 +980,7 @@
           }
         }
       }
-    }
+
   }
   .mobile-brand{
     width:$width;
@@ -1097,10 +1094,10 @@
       color: #815ce7;
     }
     display: inline-block;
-    li{
+    .computer-same{
       float: left;
-
-      &.computer-rpic{
+    }
+    .computer-rpic{
 
         margin-top: 10px;
         .xiang{
@@ -1196,7 +1193,7 @@
           }
         }
       }
-    }
+
   }
   .computer-brand{
     width:$width;
@@ -1328,11 +1325,10 @@
       color: #25b7dc;
     }
     display: inline-block;
-    li{
+    .sport-same{
       float: left;
-
-      &.sport-rpic{
-
+    }
+    .sport-rpic{
         margin-top: 10px;
         .xiang{
           width: 218px;
@@ -1423,8 +1419,8 @@
           }
         }
       }
-    }
   }
+
   .sport-brand{
     width:$width;
     a{
