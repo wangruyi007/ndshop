@@ -273,7 +273,7 @@ a{
         }
 
         }
-    }
+
 
     .search-hot {
         width: 514px;
@@ -300,6 +300,7 @@ a{
         }
     }
 }
+
 /*header-top end*/
 
 /*nav start*/
@@ -323,6 +324,7 @@ a{
                 family:$main-sec-ff;
                 size:16px;
             }
+            color:#333;
             line-height:40px;
             text-align:center;
             cursor:pointer;
@@ -330,7 +332,13 @@ a{
             &.main-nav{
                 padding: 0 0 0 80px;
                 a{
-                    font-size: 16px;
+                    color:#333;
+                    font: {
+                        size:16px;
+                    }
+                    &:hover{
+                        color: #35b5ff;
+                    }
                 }
             }
             .all-goods{

@@ -20,16 +20,16 @@
       padding: {
         top:20px;
       }
-      .hot-list{
+      li{
         width: 220px;
         height: 180px;
         text-align: center;
         cursor: pointer;
         float: left;
         .hot-img{
+          display:block;
             img{
-              width: 105px;
-              height: 112px;
+              height: 117px;
               display: inline-block;
             }
         }
@@ -807,14 +807,19 @@
   background: #fff;
   line-height:40px;
   margin-bottom: 60px;
-  img{
-    height: 40px;
-    margin:{
-      right: 33px;
+  a{
+    img{
+      height: 40px;
+      margin:{
+        right: 40px;
+      }
+      cursor: pointer;
+      display:inline-block;
+      vertical-align: middle;
+      &.last-pic{
+        margin-right: 0;
+      }
     }
-    cursor: pointer;
-    display:inline-block;
-    vertical-align: middle;
   }
 }
 
