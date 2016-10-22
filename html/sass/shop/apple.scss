@@ -1,0 +1,242 @@
+@import "../layout/_variables", "../layout/_mixin";
+#content{
+    .shop-summary{
+           height:28px;
+           background:#fbfbfb;
+           line-height: 28px;
+      .shop-name{
+          float: right;
+          width: 228px;
+          text-align: right;
+        .shop-gold{
+          font-size: 14px;
+          font-family:$headline-ff;
+          font-weight: bold;
+          padding-right: 14px;
+        }
+        .shop-gat{
+          color: white;
+          text-align: center;
+          border-radius: 5px;
+          width:70px;
+          height: 20px;
+          line-height: 20px;
+          display:inline-block;
+          background: #f25b50;
+        }
+
+      }
+    }
+  .hd{
+    width: 100%;
+    height: 83px;
+    margin-top: 24px;
+    margin-bottom: 14px;
+    .shop-logo{
+      display:block;
+      width: 216px;
+      height: 57px;
+      background-image:url('../../images/shop/title.png');
+      background-repeat:no-repeat;
+      padding-left: 45px;
+      float: left;
+     }
+    .shop-code{
+      display:block;
+      width: 81px;
+      height: 82px;
+      background-image: url("../../images/shop/erweima.png");
+      background-repeat:no-repeat;
+      float: right;
+    }
+    }
+  .nav-shop{
+     width: 100%;
+     height: 40px;
+    background:#fbfbfb;
+    line-height: 40px;
+    overflow: hidden;
+    clear: both;
+    ul{
+      width:1020px;
+      display:block;
+      margin: 0 auto;
+     li{
+        float: left;
+        height:40px;
+        font:{
+          family:$main-sec-ff;
+          size:16px;
+        }
+        color:#333;
+        cursor:pointer;
+        overflow:hidden;
+        &.nav-main{
+          padding: 0 0 0 75px;
+
+
+        }
+
+        }
+    }
+  }
+
+  .main-content{
+    width: 100%;
+    height:auto;
+    $border: 1px solid #dfdfdf;
+    .all{
+      width:181px;
+      height: 29px;
+      line-height: 29px;
+      margin:10px 8px;
+    }
+           .left-side{
+             width: 200px;
+             margin-top: 40px;
+             float: left;
+             .left-side-top{
+
+               border:$border;
+               height: 116px;
+               .left-search{
+               width:181px;
+               height: 29px;
+                 border: $border;
+                 margin:10px 8px;
+               }
+               button{
+                 @extend .all;
+                 color: white;
+                 border: 0px;
+                 background: #40bbff;
+                 border-radius: 5px;
+                 margin:0 0 0 8px;
+                 family:$main-sec-ff;
+               }
+               .left-search-hot{
+                 @extend .left-search;
+                 border: 0px;
+                 color: #a4a4a4;
+                 family:$main-sec-ff;
+                 span{
+                    font-size: 14px;
+                   font-weight: bold;
+                 }
+                 a{
+                    color: #a4a4a4;
+                    padding-left: 5px;
+
+                 }
+               }
+
+             }
+
+             .left-side-bottom{
+               @extend .left-side-top;
+               height: auto;
+               margin-top: 8px;
+               .c-title{
+                 color: #656565;
+                 height:32px;
+                 line-height: 32px;
+                 padding-left: 11px;
+                 border-bottom: 2px solid #33b7f8;
+
+               }
+               .ipad{
+                   h2{
+                     @extend .all;
+                     color: #636363;
+                     text-indent: 2.0em;
+                     background: #f6f6f6;
+                   }
+                 ul{
+                   li{
+                     @extend .all;
+                     border-bottom: 1px dashed #c4c4c4;
+                     a{
+                       font-family:$main-sec-ff;
+                       padding-left: 20px;
+                       color: #696969;
+                       }
+                   }
+                 }
+               }
+
+               .iphone{
+                   @extend .ipad;
+               }
+               .Mac{
+                 @extend .ipad;
+               }
+               .parts{
+                 @extend .ipad;
+               }
+
+             }
+
+
+           }
+
+    .right-side{
+          width: 893px;
+          border:$border;
+          float: right;
+          margin-top: 40px;
+      .right-title{
+        height: 42px;
+        line-height: 42px;
+        border-bottom: 1px solid #dfdfdf;
+         span{
+           height: 42px;
+           font-size: 14px;
+           text-align: center;
+           color: #565454;
+           border-bottom: 2px solid #76afcc;
+           clear: none;
+           padding: 7px 6px 13px 6px;
+           margin-left: 7px;
+          }
+        .right-option{
+          float: right;
+          margin-right: 18px;
+          a{
+            color: black;
+            background: #efeded;
+            padding: 7px 6px;
+            &.current{
+              background:#ea3430;
+              color:$white;
+            }
+
+          }
+        }
+      }
+
+      .right-commodity{
+          .shop-baby{
+               width: 216px;
+               height: 230px;
+               float: left;
+             .pro-pic{
+                width: 141px;
+                margin: 0px auto;
+             }
+            .right-shop{
+              font-family:$main-sec-ff;
+              width: 216px;
+              text-align: left;
+              margin: 0 auto;
+              line-height: 20px;
+            }
+          }
+      }
+
+
+    }
+
+  }
+
+  }
+  
