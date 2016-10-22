@@ -40,12 +40,12 @@ gulp.task('sasshint', ()=> {
 });
 
 gulp.task("fontIcon", ()=> {
-    return gulp.src(["./demo/font/svg/*.svg"])
+    return gulp.src(["./font-icon/**/*.svg"])
         .pipe(fontIcon({
             fontName: "myfont",
             fontAlias: "mf"
         }))
-        .pipe(gulp.dest(__dirname+"/demo/font/icons"));
+        .pipe(gulp.dest(__dirname+"/font/icons"));
 });
 
 gulp.task('serve', ['sass'], ()=> {
